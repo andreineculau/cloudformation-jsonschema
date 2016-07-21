@@ -4,314 +4,314 @@
   "description": "Cloudformation template resource",
 
   "oneOf": [{
-    "$ref": "resources/aws-apigateway-account.json#/"
+    "$ref": "resources/aws-apigateway-account.json#"
   }, {
-    "$ref": "resources/aws-apigateway-apikey.json#/"
+    "$ref": "resources/aws-apigateway-apikey.json#"
   }, {
-    "$ref": "resources/aws-apigateway-authorizer.json#/"
+    "$ref": "resources/aws-apigateway-authorizer.json#"
   }, {
-    "$ref": "resources/aws-apigateway-basepathmapping.json#/"
+    "$ref": "resources/aws-apigateway-basepathmapping.json#"
   }, {
-    "$ref": "resources/aws-apigateway-clientcertificate.json#/"
+    "$ref": "resources/aws-apigateway-clientcertificate.json#"
   }, {
-    "$ref": "resources/aws-apigateway-deployment.json#/"
+    "$ref": "resources/aws-apigateway-deployment.json#"
   }, {
-    "$ref": "resources/aws-apigateway-method.json#/"
+    "$ref": "resources/aws-apigateway-method.json#"
   }, {
-    "$ref": "resources/aws-apigateway-model.json#/"
+    "$ref": "resources/aws-apigateway-model.json#"
   }, {
-    "$ref": "resources/aws-apigateway-resource.json#/"
+    "$ref": "resources/aws-apigateway-resource.json#"
   }, {
-    "$ref": "resources/aws-apigateway-restapi.json#/"
+    "$ref": "resources/aws-apigateway-restapi.json#"
   }, {
-    "$ref": "resources/aws-apigateway-stage.json#/"
+    "$ref": "resources/aws-apigateway-stage.json#"
   }, {
-    "$ref": "resources/aws-autoscaling-autoscalinggroup.json#/"
+    "$ref": "resources/aws-autoscaling-autoscalinggroup.json#"
   }, {
-    "$ref": "resources/aws-autoscaling-launchconfiguration.json#/"
+    "$ref": "resources/aws-autoscaling-launchconfiguration.json#"
   }, {
-    "$ref": "resources/aws-autoscaling-lifecyclehook.json#/"
+    "$ref": "resources/aws-autoscaling-lifecyclehook.json#"
   }, {
-    "$ref": "resources/aws-autoscaling-scalingpolicy.json#/"
+    "$ref": "resources/aws-autoscaling-scalingpolicy.json#"
   }, {
-    "$ref": "resources/aws-autoscaling-scheduledaction.json#/"
+    "$ref": "resources/aws-autoscaling-scheduledaction.json#"
   }, {
-    "$ref": "resources/aws-cloudformation-authentication.json#/"
+    "$ref": "resources/aws-cloudformation-authentication.json#"
   }, {
-    "$ref": "resources/aws-cloudformation-customresource.json#/"
+    "$ref": "resources/aws-cloudformation-customresource.json#"
   }, {
-    "$ref": "resources/aws-cloudformation-init.json#/"
+    "$ref": "resources/aws-cloudformation-init.json#"
   }, {
-    "$ref": "resources/aws-cloudformation-interface.json#/"
+    "$ref": "resources/aws-cloudformation-interface.json#"
   }, {
-    "$ref": "resources/aws-cloudformation-stack.json#/"
+    "$ref": "resources/aws-cloudformation-stack.json#"
   }, {
-    "$ref": "resources/aws-cloudformation-waitcondition.json#/"
+    "$ref": "resources/aws-cloudformation-waitcondition.json#"
   }, {
-    "$ref": "resources/aws-cloudformation-waitconditionhandle.json#/"
+    "$ref": "resources/aws-cloudformation-waitconditionhandle.json#"
   }, {
-    "$ref": "resources/aws-cloudfront-distribution.json#/"
+    "$ref": "resources/aws-cloudfront-distribution.json#"
   }, {
-    "$ref": "resources/aws-cloudtrail-trail.json#/"
+    "$ref": "resources/aws-cloudtrail-trail.json#"
   }, {
-    "$ref": "resources/aws-cloudwatch-alarm.json#/"
+    "$ref": "resources/aws-cloudwatch-alarm.json#"
   }, {
-    "$ref": "resources/aws-codedeploy-application.json#/"
+    "$ref": "resources/aws-codedeploy-application.json#"
   }, {
-    "$ref": "resources/aws-codedeploy-deploymentconfig.json#/"
+    "$ref": "resources/aws-codedeploy-deploymentconfig.json#"
   }, {
-    "$ref": "resources/aws-codedeploy-deploymentgroup.json#/"
+    "$ref": "resources/aws-codedeploy-deploymentgroup.json#"
   }, {
-    "$ref": "resources/aws-codepipeline-customactiontype.json#/"
+    "$ref": "resources/aws-codepipeline-customactiontype.json#"
   }, {
-    "$ref": "resources/aws-codepipeline-pipeline.json#/"
+    "$ref": "resources/aws-codepipeline-pipeline.json#"
   }, {
-    "$ref": "resources/aws-config-configrule.json#/"
+    "$ref": "resources/aws-config-configrule.json#"
   }, {
-    "$ref": "resources/aws-config-configurationrecorder.json#/"
+    "$ref": "resources/aws-config-configurationrecorder.json#"
   }, {
-    "$ref": "resources/aws-config-deliverychannel.json#/"
+    "$ref": "resources/aws-config-deliverychannel.json#"
   }, {
-    "$ref": "resources/aws-datapipeline-pipeline.json#/"
+    "$ref": "resources/aws-datapipeline-pipeline.json#"
   }, {
-    "$ref": "resources/aws-directoryservice-microsoftad.json#/"
+    "$ref": "resources/aws-directoryservice-microsoftad.json#"
   }, {
-    "$ref": "resources/aws-directoryservice-simplead.json#/"
+    "$ref": "resources/aws-directoryservice-simplead.json#"
   }, {
-    "$ref": "resources/aws-dynamodb-table.json#/"
+    "$ref": "resources/aws-dynamodb-table.json#"
   }, {
-    "$ref": "resources/aws-ec2-customergateway.json#/"
+    "$ref": "resources/aws-ec2-customergateway.json#"
   }, {
-    "$ref": "resources/aws-ec2-dhcpoptions.json#/"
+    "$ref": "resources/aws-ec2-dhcpoptions.json#"
   }, {
-    "$ref": "resources/aws-ec2-eip.json#/"
+    "$ref": "resources/aws-ec2-eip.json#"
   }, {
-    "$ref": "resources/aws-ec2-eipassociation.json#/"
+    "$ref": "resources/aws-ec2-eipassociation.json#"
   }, {
-    "$ref": "resources/aws-ec2-host.json#/"
+    "$ref": "resources/aws-ec2-host.json#"
   }, {
-    "$ref": "resources/aws-ec2-instance.json#/"
+    "$ref": "resources/aws-ec2-instance.json#"
   }, {
-    "$ref": "resources/aws-ec2-internetgateway.json#/"
+    "$ref": "resources/aws-ec2-internetgateway.json#"
   }, {
-    "$ref": "resources/aws-ec2-natgateway.json#/"
+    "$ref": "resources/aws-ec2-natgateway.json#"
   }, {
-    "$ref": "resources/aws-ec2-networkacl.json#/"
+    "$ref": "resources/aws-ec2-networkacl.json#"
   }, {
-    "$ref": "resources/aws-ec2-networkaclentry.json#/"
+    "$ref": "resources/aws-ec2-networkaclentry.json#"
   }, {
-    "$ref": "resources/aws-ec2-networkinterface.json#/"
+    "$ref": "resources/aws-ec2-networkinterface.json#"
   }, {
-    "$ref": "resources/aws-ec2-networkinterfaceattachment.json#/"
+    "$ref": "resources/aws-ec2-networkinterfaceattachment.json#"
   }, {
-    "$ref": "resources/aws-ec2-placementgroup.json#/"
+    "$ref": "resources/aws-ec2-placementgroup.json#"
   }, {
-    "$ref": "resources/aws-ec2-route.json#/"
+    "$ref": "resources/aws-ec2-route.json#"
   }, {
-    "$ref": "resources/aws-ec2-routetable.json#/"
+    "$ref": "resources/aws-ec2-routetable.json#"
   }, {
-    "$ref": "resources/aws-ec2-securitygroup.json#/"
+    "$ref": "resources/aws-ec2-securitygroup.json#"
   }, {
-    "$ref": "resources/aws-ec2-securitygroupegress.json#/"
+    "$ref": "resources/aws-ec2-securitygroupegress.json#"
   }, {
-    "$ref": "resources/aws-ec2-securitygroupingress.json#/"
+    "$ref": "resources/aws-ec2-securitygroupingress.json#"
   }, {
-    "$ref": "resources/aws-ec2-spotfleet.json#/"
+    "$ref": "resources/aws-ec2-spotfleet.json#"
   }, {
-    "$ref": "resources/aws-ec2-subnet.json#/"
+    "$ref": "resources/aws-ec2-subnet.json#"
   }, {
-    "$ref": "resources/aws-ec2-subnetnetworkaclassociation.json#/"
+    "$ref": "resources/aws-ec2-subnetnetworkaclassociation.json#"
   }, {
-    "$ref": "resources/aws-ec2-subnetroutetableassociation.json#/"
+    "$ref": "resources/aws-ec2-subnetroutetableassociation.json#"
   }, {
-    "$ref": "resources/aws-ec2-volume.json#/"
+    "$ref": "resources/aws-ec2-volume.json#"
   }, {
-    "$ref": "resources/aws-ec2-volumeattachment.json#/"
+    "$ref": "resources/aws-ec2-volumeattachment.json#"
   }, {
-    "$ref": "resources/aws-ec2-vpc.json#/"
+    "$ref": "resources/aws-ec2-vpc.json#"
   }, {
-    "$ref": "resources/aws-ec2-vpcdhcpoptionsassociation.json#/"
+    "$ref": "resources/aws-ec2-vpcdhcpoptionsassociation.json#"
   }, {
-    "$ref": "resources/aws-ec2-vpcendpoint.json#/"
+    "$ref": "resources/aws-ec2-vpcendpoint.json#"
   }, {
-    "$ref": "resources/aws-ec2-vpcgatewayattachment.json#/"
+    "$ref": "resources/aws-ec2-vpcgatewayattachment.json#"
   }, {
-    "$ref": "resources/aws-ec2-vpcpeeringconnection.json#/"
+    "$ref": "resources/aws-ec2-vpcpeeringconnection.json#"
   }, {
-    "$ref": "resources/aws-ec2-vpnconnection.json#/"
+    "$ref": "resources/aws-ec2-vpnconnection.json#"
   }, {
-    "$ref": "resources/aws-ec2-vpnconnectionroute.json#/"
+    "$ref": "resources/aws-ec2-vpnconnectionroute.json#"
   }, {
-    "$ref": "resources/aws-ec2-vpngateway.json#/"
+    "$ref": "resources/aws-ec2-vpngateway.json#"
   }, {
-    "$ref": "resources/aws-ec2-vpngatewayroutepropagation.json#/"
+    "$ref": "resources/aws-ec2-vpngatewayroutepropagation.json#"
   }, {
-    "$ref": "resources/aws-ecr-repository.json#/"
+    "$ref": "resources/aws-ecr-repository.json#"
   }, {
-    "$ref": "resources/aws-ecs-cluster.json#/"
+    "$ref": "resources/aws-ecs-cluster.json#"
   }, {
-    "$ref": "resources/aws-ecs-service.json#/"
+    "$ref": "resources/aws-ecs-service.json#"
   }, {
-    "$ref": "resources/aws-ecs-taskdefinition.json#/"
+    "$ref": "resources/aws-ecs-taskdefinition.json#"
   }, {
-    "$ref": "resources/aws-efs-filesystem.json#/"
+    "$ref": "resources/aws-efs-filesystem.json#"
   }, {
-    "$ref": "resources/aws-efs-mounttarget.json#/"
+    "$ref": "resources/aws-efs-mounttarget.json#"
   }, {
-    "$ref": "resources/aws-elasticache-cachecluster.json#/"
+    "$ref": "resources/aws-elasticache-cachecluster.json#"
   }, {
-    "$ref": "resources/aws-elasticache-parametergroup.json#/"
+    "$ref": "resources/aws-elasticache-parametergroup.json#"
   }, {
-    "$ref": "resources/aws-elasticache-replicationgroup.json#/"
+    "$ref": "resources/aws-elasticache-replicationgroup.json#"
   }, {
-    "$ref": "resources/aws-elasticache-securitygroup.json#/"
+    "$ref": "resources/aws-elasticache-securitygroup.json#"
   }, {
-    "$ref": "resources/aws-elasticache-securitygroupingress.json#/"
+    "$ref": "resources/aws-elasticache-securitygroupingress.json#"
   }, {
-    "$ref": "resources/aws-elasticache-subnetgroup.json#/"
+    "$ref": "resources/aws-elasticache-subnetgroup.json#"
   }, {
-    "$ref": "resources/aws-elasticbeanstalk-application.json#/"
+    "$ref": "resources/aws-elasticbeanstalk-application.json#"
   }, {
-    "$ref": "resources/aws-elasticbeanstalk-applicationversion.json#/"
+    "$ref": "resources/aws-elasticbeanstalk-applicationversion.json#"
   }, {
-    "$ref": "resources/aws-elasticbeanstalk-configurationtemplate.json#/"
+    "$ref": "resources/aws-elasticbeanstalk-configurationtemplate.json#"
   }, {
-    "$ref": "resources/aws-elasticbeanstalk-environment.json#/"
+    "$ref": "resources/aws-elasticbeanstalk-environment.json#"
   }, {
-    "$ref": "resources/aws-elasticloadbalancing-loadbalancer.json#/"
+    "$ref": "resources/aws-elasticloadbalancing-loadbalancer.json#"
   }, {
-    "$ref": "resources/aws-elasticsearch-domain.json#/"
+    "$ref": "resources/aws-elasticsearch-domain.json#"
   }, {
-    "$ref": "resources/aws-emr-cluster.json#/"
+    "$ref": "resources/aws-emr-cluster.json#"
   }, {
-    "$ref": "resources/aws-emr-instancegroupconfig.json#/"
+    "$ref": "resources/aws-emr-instancegroupconfig.json#"
   }, {
-    "$ref": "resources/aws-emr-step.json#/"
+    "$ref": "resources/aws-emr-step.json#"
   }, {
-    "$ref": "resources/aws-events-rule.json#/"
+    "$ref": "resources/aws-events-rule.json#"
   }, {
-    "$ref": "resources/aws-gamelift-alias.json#/"
+    "$ref": "resources/aws-gamelift-alias.json#"
   }, {
-    "$ref": "resources/aws-gamelift-build.json#/"
+    "$ref": "resources/aws-gamelift-build.json#"
   }, {
-    "$ref": "resources/aws-gamelift-fleet.json#/"
+    "$ref": "resources/aws-gamelift-fleet.json#"
   }, {
-    "$ref": "resources/aws-iam-accesskey.json#/"
+    "$ref": "resources/aws-iam-accesskey.json#"
   }, {
-    "$ref": "resources/aws-iam-group.json#/"
+    "$ref": "resources/aws-iam-group.json#"
   }, {
-    "$ref": "resources/aws-iam-instanceprofile.json#/"
+    "$ref": "resources/aws-iam-instanceprofile.json#"
   }, {
-    "$ref": "resources/aws-iam-managedpolicy.json#/"
+    "$ref": "resources/aws-iam-managedpolicy.json#"
   }, {
-    "$ref": "resources/aws-iam-policy.json#/"
+    "$ref": "resources/aws-iam-policy.json#"
   }, {
-    "$ref": "resources/aws-iam-role.json#/"
+    "$ref": "resources/aws-iam-role.json#"
   }, {
-    "$ref": "resources/aws-iam-user.json#/"
+    "$ref": "resources/aws-iam-user.json#"
   }, {
-    "$ref": "resources/aws-iam-usertogroupaddition.json#/"
+    "$ref": "resources/aws-iam-usertogroupaddition.json#"
   }, {
-    "$ref": "resources/aws-kinesis-stream.json#/"
+    "$ref": "resources/aws-kinesis-stream.json#"
   }, {
-    "$ref": "resources/aws-kms-key.json#/"
+    "$ref": "resources/aws-kms-key.json#"
   }, {
-    "$ref": "resources/aws-lambda-eventsourcemapping.json#/"
+    "$ref": "resources/aws-lambda-eventsourcemapping.json#"
   }, {
-    "$ref": "resources/aws-lambda-alias.json#/"
+    "$ref": "resources/aws-lambda-alias.json#"
   }, {
-    "$ref": "resources/aws-lambda-function.json#/"
+    "$ref": "resources/aws-lambda-function.json#"
   }, {
-    "$ref": "resources/aws-lambda-permission.json#/"
+    "$ref": "resources/aws-lambda-permission.json#"
   }, {
-    "$ref": "resources/aws-lambda-version.json#/"
+    "$ref": "resources/aws-lambda-version.json#"
   }, {
-    "$ref": "resources/aws-logs-destination.json#/"
+    "$ref": "resources/aws-logs-destination.json#"
   }, {
-    "$ref": "resources/aws-logs-loggroup.json#/"
+    "$ref": "resources/aws-logs-loggroup.json#"
   }, {
-    "$ref": "resources/aws-logs-logstream.json#/"
+    "$ref": "resources/aws-logs-logstream.json#"
   }, {
-    "$ref": "resources/aws-logs-metricfilter.json#/"
+    "$ref": "resources/aws-logs-metricfilter.json#"
   }, {
-    "$ref": "resources/aws-logs-subscriptionfilter.json#/"
+    "$ref": "resources/aws-logs-subscriptionfilter.json#"
   }, {
-    "$ref": "resources/aws-opsworks-app.json#/"
+    "$ref": "resources/aws-opsworks-app.json#"
   }, {
-    "$ref": "resources/aws-opsworks-elasticloadbalancerattachment.json#/"
+    "$ref": "resources/aws-opsworks-elasticloadbalancerattachment.json#"
   }, {
-    "$ref": "resources/aws-opsworks-instance.json#/"
+    "$ref": "resources/aws-opsworks-instance.json#"
   }, {
-    "$ref": "resources/aws-opsworks-layer.json#/"
+    "$ref": "resources/aws-opsworks-layer.json#"
   }, {
-    "$ref": "resources/aws-opsworks-stack.json#/"
+    "$ref": "resources/aws-opsworks-stack.json#"
   }, {
-    "$ref": "resources/aws-rds-dbcluster.json#/"
+    "$ref": "resources/aws-rds-dbcluster.json#"
   }, {
-    "$ref": "resources/aws-rds-dbclusterparametergroup.json#/"
+    "$ref": "resources/aws-rds-dbclusterparametergroup.json#"
   }, {
-    "$ref": "resources/aws-rds-dbinstance.json#/"
+    "$ref": "resources/aws-rds-dbinstance.json#"
   }, {
-    "$ref": "resources/aws-rds-dbparametergroup.json#/"
+    "$ref": "resources/aws-rds-dbparametergroup.json#"
   }, {
-    "$ref": "resources/aws-rds-dbsecuritygroup.json#/"
+    "$ref": "resources/aws-rds-dbsecuritygroup.json#"
   }, {
-    "$ref": "resources/aws-rds-dbsecuritygroupingress.json#/"
+    "$ref": "resources/aws-rds-dbsecuritygroupingress.json#"
   }, {
-    "$ref": "resources/aws-rds-dbsubnetgroup.json#/"
+    "$ref": "resources/aws-rds-dbsubnetgroup.json#"
   }, {
-    "$ref": "resources/aws-rds-eventsubscription.json#/"
+    "$ref": "resources/aws-rds-eventsubscription.json#"
   }, {
-    "$ref": "resources/aws-rds-optiongroup.json#/"
+    "$ref": "resources/aws-rds-optiongroup.json#"
   }, {
-    "$ref": "resources/aws-redshift-cluster.json#/"
+    "$ref": "resources/aws-redshift-cluster.json#"
   }, {
-    "$ref": "resources/aws-redshift-clusterparametergroup.json#/"
+    "$ref": "resources/aws-redshift-clusterparametergroup.json#"
   }, {
-    "$ref": "resources/aws-redshift-clustersecuritygroup.json#/"
+    "$ref": "resources/aws-redshift-clustersecuritygroup.json#"
   }, {
-    "$ref": "resources/aws-redshift-clustersecuritygroupingress.json#/"
+    "$ref": "resources/aws-redshift-clustersecuritygroupingress.json#"
   }, {
-    "$ref": "resources/aws-redshift-clustersubnetgroup.json#/"
+    "$ref": "resources/aws-redshift-clustersubnetgroup.json#"
   }, {
-    "$ref": "resources/aws-route53-healthcheck.json#/"
+    "$ref": "resources/aws-route53-healthcheck.json#"
   }, {
-    "$ref": "resources/aws-route53-hostedzone.json#/"
+    "$ref": "resources/aws-route53-hostedzone.json#"
   }, {
-    "$ref": "resources/aws-route53-recordset.json#/"
+    "$ref": "resources/aws-route53-recordset.json#"
   }, {
-    "$ref": "resources/aws-route53-recordsetgroup.json#/"
+    "$ref": "resources/aws-route53-recordsetgroup.json#"
   }, {
-    "$ref": "resources/aws-s3-bucket.json#/"
+    "$ref": "resources/aws-s3-bucket.json#"
   }, {
-    "$ref": "resources/aws-s3-bucketpolicy.json#/"
+    "$ref": "resources/aws-s3-bucketpolicy.json#"
   }, {
-    "$ref": "resources/aws-sdb-domain.json#/"
+    "$ref": "resources/aws-sdb-domain.json#"
   }, {
-    "$ref": "resources/aws-sns-topic.json#/"
+    "$ref": "resources/aws-sns-topic.json#"
   }, {
-    "$ref": "resources/aws-sns-topicpolicy.json#/"
+    "$ref": "resources/aws-sns-topicpolicy.json#"
   }, {
-    "$ref": "resources/aws-sqs-queue.json#/"
+    "$ref": "resources/aws-sqs-queue.json#"
   }, {
-    "$ref": "resources/aws-sqs-queuepolicy.json#/"
+    "$ref": "resources/aws-sqs-queuepolicy.json#"
   }, {
-    "$ref": "resources/aws-ssm-document.json#/"
+    "$ref": "resources/aws-ssm-document.json#"
   }, {
-    "$ref": "resources/aws-waf-bytematchset.json#/"
+    "$ref": "resources/aws-waf-bytematchset.json#"
   }, {
-    "$ref": "resources/aws-waf-ipset.json#/"
+    "$ref": "resources/aws-waf-ipset.json#"
   }, {
-    "$ref": "resources/aws-waf-rule.json#/"
+    "$ref": "resources/aws-waf-rule.json#"
   }, {
-    "$ref": "resources/aws-waf-sizeconstraintset.json#/"
+    "$ref": "resources/aws-waf-sizeconstraintset.json#"
   }, {
-    "$ref": "resources/aws-waf-sqlinjectionmatchset.json#/"
+    "$ref": "resources/aws-waf-sqlinjectionmatchset.json#"
   }, {
-    "$ref": "resources/aws-waf-webacl.json#/"
+    "$ref": "resources/aws-waf-webacl.json#"
   }, {
-    "$ref": "resources/aws-waf-xssmatchset.json#/"
+    "$ref": "resources/aws-waf-xssmatchset.json#"
   }, {
-    "$ref": "resources/aws-workspaces-workspace.json#/"
+    "$ref": "resources/aws-workspaces-workspace.json#"
   }]
 }
