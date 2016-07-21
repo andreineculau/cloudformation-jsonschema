@@ -2,11 +2,11 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Output",
   "description": "Cloudformation template output",
-  
+
   "type": "object",
   "properties": {
     "Value": {
-      "$ref": "basic_types.json#/definitions/string"
+      "$ref": "types.json#/definitions/string"
     },
     "Description": {
       "type": "string"

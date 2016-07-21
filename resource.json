@@ -483,10 +483,10 @@
             "additionalProperties": false,
             "properties": {
               "Count": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "Timeout": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             }
           }
@@ -522,22 +522,22 @@
             "additionalProperties": false,
             "properties": {
               "MaxBatchSize": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "MinInstancesInService": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "MinSuccessfulInstancesPercent": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "PauseTime": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SuspendProcesses": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "WaitOnResourceSignals": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               }
             }
           },
@@ -545,7 +545,7 @@
             "type": "object",
             "additionalProperties": false,
             "IgnoreUnmodifiedGroupSizeProperties": {
-              "$ref": "basic_types.json#/definitions/boolean"
+              "$ref": "types.json#/definitions/boolean"
             }
           }
         }
@@ -560,7 +560,7 @@
             "additionalProperties": false,
             "properties": {
               "CloudWatchRoleArn": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             }
           },
@@ -596,13 +596,13 @@
             "additionalProperties": false,
             "properties": {
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Enabled": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "StageKeys": {
                 "$ref": "#/definitions/property_types/aws-properties-apitgateway-apikey-stagekey"
@@ -641,28 +641,28 @@
             "additionalProperties": false,
             "properties": {
               "AuthorizerCredentials": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "AuthorizerResultTtlInSeconds": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "AuthorizerUri": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "IdentitySource": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "IdentityValidationExpression": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "RestApiId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Type": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -705,16 +705,16 @@
             "additionalProperties": false,
             "properties": {
               "BasePath": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DomainName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "RestApiId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Stage": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -755,7 +755,7 @@
             "additionalProperties": false,
             "properties": {
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             }
           },
@@ -791,16 +791,16 @@
             "additionalProperties": false,
             "properties": {
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "RestApiId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "StageDescription": {
                 "$ref": "#/definitions/property_types/aws-properties-apitgateway-deployment-stagedescription"
               },
               "StageName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -841,16 +841,16 @@
             "additionalProperties": false,
             "properties": {
               "ApiKeyRequired": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "AuthorizationType": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "AuthorizerId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "HttpMethod": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Integration": {
                 "$ref": "#/definitions/property_types/aws-properties-apitgateway-method-integration"
@@ -859,16 +859,16 @@
                 "$ref": "#/definitions/property_types/aws-properties-apitgateway-method-methodresponse"
               },
               "RequestModels": {
-                "$ref": "basic_types.json#/definitions/key-value-pairs"
+                "$ref": "types.json#/definitions/key-value-pairs"
               },
               "RequestParameters": {
-                "$ref": "basic_types.json#/definitions/key-value-pairs"
+                "$ref": "types.json#/definitions/key-value-pairs"
               },
               "ResourceId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "RestApiId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -911,19 +911,19 @@
             "additionalProperties": false,
             "properties": {
               "ContentType": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "RestApiId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Schema": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -963,13 +963,13 @@
             "additionalProperties": false,
             "properties": {
               "ParentId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "PathPart": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "RestApiId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -1011,25 +1011,25 @@
             "additionalProperties": false,
             "properties": {
               "Body": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "BodyS3Location": {
                 "$ref": "#/definitions/property_types/aws-properties-apitgateway-restapi-bodys3location"
               },
               "CloneFrom": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "FailOnWarnings": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Parameters": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               }
             },
             "required": [
@@ -1069,31 +1069,31 @@
             "additionalProperties": false,
             "properties": {
               "CacheClusterEnabled": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "CacheClusterSize": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ClientCertificateId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DeploymentId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "MethodSettings": {
                 "$ref": "#/definitions/property_types/aws-properties-apitgateway-stage-methodsetting"
               },
               "RestApiId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "StageName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Variables": {
-                "$ref": "basic_types.json#/definitions/key-value-pairs"
+                "$ref": "types.json#/definitions/key-value-pairs"
               }
             },
             "required": [
@@ -1135,52 +1135,52 @@
             "additionalProperties": false,
             "properties": {
               "AvailabilityZones": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "Cooldown": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DesiredCapacity": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "HealthCheckGracePeriod": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "HealthCheckType": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "InstanceId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "LaunchConfigurationName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "LoadBalancerNames": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "MaxSize": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "MetricsCollection": {
                 "$ref": "#/definitions/property_types/aws-properties-as-metricscollection"
               },
               "MinSize": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "NotificationConfigurations": {
                 "$ref": "#/definitions/property_types/aws-properties-as-notificationconfigurations"
               },
               "PlacementGroup": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Tags": {
                 "$ref": "#/definitions/property_types/aws-properties-as-tags"
               },
               "TerminationPolicies": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "VPCZoneIdentifier": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "NotificationConfiguration": {
                 "$ref": "#/definitions/property_types/aws-properties-as-notificationconfigurations"
@@ -1230,55 +1230,55 @@
             "additionalProperties": false,
             "properties": {
               "AssociatePublicIpAddress": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "BlockDeviceMappings": {
                 "$ref": "#/definitions/property_types/aws-properties-as-launchconfig-blockdev-mapping"
               },
               "ClassicLinkVPCId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ClassicLinkVPCSecurityGroups": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "EbsOptimized": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "IamInstanceProfile": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ImageId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "InstanceId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "InstanceMonitoring": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "InstanceType": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "KernelId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "KeyName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "PlacementTenancy": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "RamDiskId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SecurityGroups": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "SpotPrice": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "UserData": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -1319,25 +1319,25 @@
             "additionalProperties": false,
             "properties": {
               "AutoScalingGroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DefaultResult": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "HeartbeatTimeout": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "LifecycleTransition": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "NotificationMetadata": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "NotificationTargetARN": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "RoleARN": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -1380,28 +1380,28 @@
             "additionalProperties": false,
             "properties": {
               "AdjustmentType": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "AutoScalingGroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Cooldown": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "EstimatedInstanceWarmup": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "MetricAggregationType": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "MinAdjustmentMagnitude": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "PolicyType": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ScalingAdjustment": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "StepAdjustments": {
                 "$ref": "#/definitions/property_types/aws-properties-autoscaling-scalingpolicy-stepadjustments"
@@ -1445,22 +1445,22 @@
             "additionalProperties": false,
             "properties": {
               "AutoScalingGroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DesiredCapacity": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "EndTime": {
                 "description": "<p>The time in UTC for this schedule to end. For example,\n                     <code class=\"code\">2010-06-01T00:00:00Z</code>.</p><p><span class=\"emphasis\"><em>Required</em></span>: No</p><p><span class=\"emphasis\"><em>Type</em></span>: Time stamp</p><p><span class=\"emphasis\"><em>Update requires</em></span>: <a class=\"link\" href=\"http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt\">No interruption</a></p>"
               },
               "MaxSize": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "MinSize": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "Recurrence": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "StartTime": {
                 "description": "<p>The time in UTC for this schedule to start. For example,\n                     <code class=\"code\">2010-06-01T00:00:00Z</code>.</p><p><span class=\"emphasis\"><em>Required</em></span>: No</p><p><span class=\"emphasis\"><em>Type</em></span>: Time stamp</p><p><span class=\"emphasis\"><em>Update requires</em></span>: <a class=\"link\" href=\"http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt\">No interruption</a></p>"
@@ -1503,28 +1503,28 @@
             "additionalProperties": false,
             "properties": {
               "accessKeyId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "buckets": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "password": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "secretKey": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "type": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "uris": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "username": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "roleName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -1564,7 +1564,7 @@
             "additionalProperties": true,
             "properties": {
               "ServiceToken": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -1681,7 +1681,7 @@
             "additionalProperties": false,
             "properties": {
               "NotificationARNs": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "Parameters": {
                 "$ref": "#/definitions/property_types/aws-properties-stack-parameters"
@@ -1690,10 +1690,10 @@
                 "$ref": "#/definitions/property_types/aws-properties-resource-tags"
               },
               "TemplateURL": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "TimeoutInMinutes": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -1733,13 +1733,13 @@
             "additionalProperties": false,
             "properties": {
               "Count": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Handle": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Timeout": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -1855,34 +1855,34 @@
             "additionalProperties": false,
             "properties": {
               "CloudWatchLogsLogGroupArn": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "CloudWatchLogsRoleArn": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "EnableLogFileValidation": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "IncludeGlobalServiceEvents": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "IsLogging": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "IsMultiRegionTrail": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "KMSKeyId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "S3BucketName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "S3KeyPrefix": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SnsTopicName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Tags": {
                 "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -1926,49 +1926,49 @@
             "additionalProperties": false,
             "properties": {
               "ActionsEnabled": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "AlarmActions": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "AlarmDescription": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "AlarmName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ComparisonOperator": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Dimensions": {
                 "$ref": "#/definitions/property_types/aws-properties-cw-dimension"
               },
               "EvaluationPeriods": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "InsufficientDataActions": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "MetricName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Namespace": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "OKActions": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "Period": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Statistic": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Threshold": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Unit": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -2014,7 +2014,7 @@
             "additionalProperties": false,
             "properties": {
               "ApplicationName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             }
           },
@@ -2050,7 +2050,7 @@
             "additionalProperties": false,
             "properties": {
               "DeploymentConfigName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "MinimumHealthyHosts": {
                 "$ref": "#/definitions/property_types/aws-properties-codedeploy-deploymentconfig-minimumhealthyhosts"
@@ -2089,19 +2089,19 @@
             "additionalProperties": false,
             "properties": {
               "ApplicationName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "AutoScalingGroups": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "Deployment": {
                 "$ref": "#/definitions/property_types/aws-properties-codedeploy-deploymentgroup-deployment"
               },
               "DeploymentConfigName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DeploymentGroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Ec2TagFilters": {
                 "$ref": "#/definitions/property_types/aws-properties-codedeploy-deploymentgroup-ec2tagfilters"
@@ -2110,7 +2110,7 @@
                 "$ref": "#/definitions/property_types/aws-properties-codedeploy-deploymentgroup-onpremisesinstancetagfilters"
               },
               "ServiceRoleArn": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -2151,7 +2151,7 @@
             "additionalProperties": false,
             "properties": {
               "Category": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ConfigurationProperties": {
                 "$ref": "#/definitions/property_types/aws-resource-codepipeline-customactiontype-configurationproperties"
@@ -2163,13 +2163,13 @@
                 "$ref": "#/definitions/property_types/aws-resource-codepipeline-customactiontype-artifactdetails"
               },
               "Provider": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Settings": {
                 "$ref": "#/definitions/property_types/aws-resource-codepipeline-customactiontype-settings"
               },
               "Version": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -2218,13 +2218,13 @@
                 "$ref": "#/definitions/property_types/aws-properties-codepipeline-pipeline-disableinboundstagetransitions"
               },
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "RestartExecutionOnUpdate": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "RoleArn": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Stages": {
                 "$ref": "#/definitions/property_types/aws-properties-codepipeline-pipeline-stages"
@@ -2269,16 +2269,16 @@
             "additionalProperties": false,
             "properties": {
               "ConfigRuleName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "InputParameters": {
                 "type": "object"
               },
               "MaximumExecutionFrequency": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Scope": {
                 "$ref": "#/definitions/property_types/aws-properties-config-configrule-scope"
@@ -2324,13 +2324,13 @@
             "additionalProperties": false,
             "properties": {
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "RecordingGroup": {
                 "$ref": "#/definitions/property_types/aws-properties-config-configurationrecorder-recordinggroup"
               },
               "RoleARN": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -2373,16 +2373,16 @@
                 "$ref": "#/definitions/property_types/aws-properties-config-deliverychannel-configsnapshotdeliveryproperties"
               },
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "S3BucketName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "S3KeyPrefix": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SnsTopicARN": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -2422,13 +2422,13 @@
             "additionalProperties": false,
             "properties": {
               "Activate": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ParameterObjects": {
                 "$ref": "#/definitions/property_types/aws-properties-datapipeline-pipeline-parameterobjects"
@@ -2481,19 +2481,19 @@
             "additionalProperties": false,
             "properties": {
               "CreateAlias": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "EnableSso": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Password": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ShortName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "VpcSettings": {
                 "$ref": "#/definitions/property_types/aws-properties-directoryservice-microsoftad-vpcsettings"
@@ -2538,25 +2538,25 @@
             "additionalProperties": false,
             "properties": {
               "CreateAlias": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "EnableSso": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Password": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ShortName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Size": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "VpcSettings": {
                 "$ref": "#/definitions/property_types/aws-properties-directoryservice-simplead-vpcsettings"
@@ -2620,7 +2620,7 @@
                 "$ref": "#/definitions/property_types/aws-properties-dynamodb-streamspecification"
               },
               "TableName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -2662,16 +2662,16 @@
             "additionalProperties": false,
             "properties": {
               "BgpAsn": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "IpAddress": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Tags": {
                 "$ref": "#/definitions/property_types/aws-properties-resource-tags"
               },
               "Type": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -2713,19 +2713,19 @@
             "additionalProperties": false,
             "properties": {
               "DomainName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DomainNameServers": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "NetbiosNameServers": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "NetbiosNodeType": {
                 "description": "<p>An integer value indicating the NetBIOS node type:</p><div class=\"itemizedlist\"><ul class=\"itemizedlist\" type=\"disc\"><li class=\"listitem\"><p><span class=\"strong\"><strong>1</strong></span>: Broadcast (\"B\")</p></li><li class=\"listitem\"><p><span class=\"strong\"><strong>2</strong></span>: Point-to-point (\"P\")</p></li><li class=\"listitem\"><p><span class=\"strong\"><strong>4</strong></span>: Mixed mode (\"M\")</p></li><li class=\"listitem\"><p><span class=\"strong\"><strong>8</strong></span>: Hybrid (\"H\")</p></li></ul></div><p>For more information about these values and about NetBIOS node types, see\n                     <a class=\"ulink\" href=\"http://www.ietf.org/rfc/rfc2132.txt\" target=\"_blank\">RFC 2132</a>, <a class=\"ulink\" href=\"http://tools.ietf.org/rfc/rfc1001.txt\" target=\"_blank\">RFC 1001</a>, and <a class=\"ulink\" href=\"http://tools.ietf.org/rfc/rfc1002.txt\" target=\"_blank\">RFC 1002</a>. We recommend that\n                  you use only the value <code class=\"code\">2</code> at this time (broadcast and multicast are\n                  not currently supported).</p><p><span class=\"emphasis\"><em>Required</em></span>: Required if <code class=\"code\">NetBiosNameServers</code> is specified;\n                  optional otherwise.</p><p><span class=\"emphasis\"><em>Type</em></span>: List of numbers</p><p><span class=\"emphasis\"><em>Update requires</em></span>: <a class=\"link\" href=\"http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement\">Replacement</a></p><p><span class=\"emphasis\"><em>Example</em></span>: <code class=\"code\">\"NetbiosNodeType\" : 2</code></p>"
               },
               "NtpServers": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "Tags": {
                 "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -2764,10 +2764,10 @@
             "additionalProperties": false,
             "properties": {
               "InstanceId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Domain": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             }
           },
@@ -2803,19 +2803,19 @@
             "additionalProperties": false,
             "properties": {
               "AllocationId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "EIP": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "InstanceId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "NetworkInterfaceId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "PrivateIpAddress": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             }
           },
@@ -2851,13 +2851,13 @@
             "additionalProperties": false,
             "properties": {
               "AutoPlacement": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "AvailabilityZone": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "InstanceType": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -2898,85 +2898,85 @@
             "additionalProperties": false,
             "properties": {
               "Affinity": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "AvailabilityZone": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "BlockDeviceMappings": {
                 "$ref": "#/definitions/property_types/aws-properties-ec2-blockdev-mapping"
               },
               "DisableApiTermination": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "EbsOptimized": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "HostId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "IamInstanceProfile": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ImageId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "InstanceInitiatedShutdownBehavior": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "InstanceType": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "KernelId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "KeyName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Monitoring": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "NetworkInterfaces": {
                 "$ref": "#/definitions/property_types/aws-properties-ec2-network-iface-embedded"
               },
               "PlacementGroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "PrivateIpAddress": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "RamdiskId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SecurityGroupIds": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "SecurityGroups": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "SourceDestCheck": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "SsmAssociations": {
                 "$ref": "#/definitions/property_types/aws-properties-ec2-instance-ssmassociations"
               },
               "SubnetId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Tags": {
                 "$ref": "#/definitions/property_types/aws-properties-resource-tags"
               },
               "Tenancy": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "UserData": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Volumes": {
                 "$ref": "#/definitions/property_types/aws-properties-ec2-mount-point"
               },
               "AdditionalInfo": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -3055,10 +3055,10 @@
             "additionalProperties": false,
             "properties": {
               "AllocationId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SubnetId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -3102,7 +3102,7 @@
                 "$ref": "#/definitions/property_types/aws-properties-resource-tags"
               },
               "VpcId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -3142,28 +3142,28 @@
             "additionalProperties": false,
             "properties": {
               "CidrBlock": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Egress": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "Icmp": {
                 "$ref": "#/definitions/property_types/aws-properties-ec2-icmp"
               },
               "NetworkAclId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "PortRange": {
                 "$ref": "#/definitions/property_types/aws-properties-ec2-port-range"
               },
               "Protocol": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "RuleAction": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "RuleNumber": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               }
             },
             "required": [
@@ -3207,25 +3207,25 @@
             "additionalProperties": false,
             "properties": {
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "GroupSet": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "PrivateIpAddress": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "PrivateIpAddresses": {
                 "$ref": "#/definitions/property_types/aws-properties-ec2-network-interface-privateipspec"
               },
               "SecondaryPrivateIpAddressCount": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "SourceDestCheck": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "SubnetId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Tags": {
                 "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -3268,16 +3268,16 @@
             "additionalProperties": false,
             "properties": {
               "DeleteOnTermination": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "DeviceIndex": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "InstanceId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "NetworkInterfaceId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -3319,7 +3319,7 @@
             "additionalProperties": false,
             "properties": {
               "Strategy": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             }
           },
@@ -3355,25 +3355,25 @@
             "additionalProperties": false,
             "properties": {
               "DestinationCidrBlock": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "GatewayId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "InstanceId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "NatGatewayId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "NetworkInterfaceId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "RouteTableId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "VpcPeeringConnectionId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -3414,7 +3414,7 @@
             "additionalProperties": false,
             "properties": {
               "VpcId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Tags": {
                 "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -3457,7 +3457,7 @@
             "additionalProperties": false,
             "properties": {
               "GroupDescription": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SecurityGroupEgress": {
                 "$ref": "#/definitions/property_types/aws-properties-ec2-security-group-rule"
@@ -3469,7 +3469,7 @@
                 "$ref": "#/definitions/property_types/aws-properties-resource-tags"
               },
               "VpcId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -3509,22 +3509,22 @@
             "additionalProperties": false,
             "properties": {
               "CidrIp": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DestinationSecurityGroupId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "FromPort": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "GroupId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "IpProtocol": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ToPort": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               }
             },
             "required": [
@@ -3567,31 +3567,31 @@
             "additionalProperties": false,
             "properties": {
               "CidrIp": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "FromPort": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "GroupId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "GroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "IpProtocol": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SourceSecurityGroupId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SourceSecurityGroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SourceSecurityGroupOwnerId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ToPort": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               }
             },
             "required": [
@@ -3673,19 +3673,19 @@
             "additionalProperties": false,
             "properties": {
               "AvailabilityZone": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "CidrBlock": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "MapPublicIpOnLaunch": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "Tags": {
                 "$ref": "#/definitions/property_types/aws-properties-resource-tags"
               },
               "VpcId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -3726,10 +3726,10 @@
             "additionalProperties": false,
             "properties": {
               "SubnetId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "NetworkAclId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -3770,10 +3770,10 @@
             "additionalProperties": false,
             "properties": {
               "RouteTableId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SubnetId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -3814,31 +3814,31 @@
             "additionalProperties": false,
             "properties": {
               "AutoEnableIO": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "AvailabilityZone": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Encrypted": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "Iops": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "KmsKeyId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Size": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SnapshotId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Tags": {
                 "$ref": "#/definitions/property_types/aws-properties-resource-tags"
               },
               "VolumeType": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -3878,13 +3878,13 @@
             "additionalProperties": false,
             "properties": {
               "Device": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "InstanceId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "VolumeId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -3926,16 +3926,16 @@
             "additionalProperties": false,
             "properties": {
               "CidrBlock": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "EnableDnsSupport": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "EnableDnsHostnames": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "InstanceTenancy": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Tags": {
                 "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -3978,10 +3978,10 @@
             "additionalProperties": false,
             "properties": {
               "DhcpOptionsId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "VpcId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -4025,13 +4025,13 @@
                 "type": "object"
               },
               "RouteTableIds": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "ServiceName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "VpcId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -4072,13 +4072,13 @@
             "additionalProperties": false,
             "properties": {
               "InternetGatewayId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "VpcId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "VpnGatewayId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -4118,13 +4118,13 @@
             "additionalProperties": false,
             "properties": {
               "PeerVpcId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Tags": {
                 "$ref": "#/definitions/property_types/aws-properties-resource-tags"
               },
               "VpcId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -4165,19 +4165,19 @@
             "additionalProperties": false,
             "properties": {
               "Type": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "CustomerGatewayId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "StaticRoutesOnly": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "Tags": {
                 "$ref": "#/definitions/property_types/aws-properties-resource-tags"
               },
               "VpnGatewayId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -4219,10 +4219,10 @@
             "additionalProperties": false,
             "properties": {
               "DestinationCidrBlock": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "VpnConnectionId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -4263,7 +4263,7 @@
             "additionalProperties": false,
             "properties": {
               "Type": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Tags": {
                 "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -4309,7 +4309,7 @@
                 "description": "<p class=\"simpara\">A list of routing table IDs that are associated with a VPC. The routing\n                  tables must be associated with the same VPC that the virtual private gateway is\n                  attached to.</p><p><span class=\"emphasis\"><em>Required</em></span>: Yes</p><p><span class=\"emphasis\"><em>Type</em></span>: List of route table IDs</p><p><span class=\"emphasis\"><em>Update requires</em></span>: <a class=\"link\" href=\"http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt\">No interruption</a></p>"
               },
               "VpnGatewayId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -4350,7 +4350,7 @@
             "additionalProperties": false,
             "properties": {
               "RepositoryName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "RepositoryPolicyText": {
                 "type": "object"
@@ -4421,22 +4421,22 @@
             "additionalProperties": false,
             "properties": {
               "Cluster": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DeploymentConfiguration": {
                 "$ref": "#/definitions/property_types/aws-properties-ecs-service-deploymentconfiguration"
               },
               "DesiredCount": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "LoadBalancers": {
                 "$ref": "#/definitions/property_types/aws-properties-ecs-service-loadbalancers"
               },
               "Role": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "TaskDefinition": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -4557,16 +4557,16 @@
             "additionalProperties": false,
             "properties": {
               "FileSystemId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "IpAddress": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SecurityGroups": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "SubnetId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -4608,67 +4608,67 @@
             "additionalProperties": false,
             "properties": {
               "AutoMinorVersionUpgrade": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "AZMode": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "CacheNodeType": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "CacheParameterGroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "CacheSecurityGroupNames": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "CacheSubnetGroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ClusterName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Engine": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "EngineVersion": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "NotificationTopicArn": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "NumCacheNodes": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Port": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "PreferredAvailabilityZone": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "PreferredAvailabilityZones": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "PreferredMaintenanceWindow": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SnapshotArns": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "SnapshotName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SnapshotRetentionLimit": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "SnapshotWindow": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Tags": {
                 "$ref": "#/definitions/property_types/aws-properties-resource-tags"
               },
               "VpcSecurityGroupIds": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               }
             },
             "required": [
@@ -4710,10 +4710,10 @@
             "additionalProperties": false,
             "properties": {
               "CacheParameterGroupFamily": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Properties": {
                 "type": "object"
@@ -4758,58 +4758,58 @@
             "additionalProperties": false,
             "properties": {
               "AutomaticFailoverEnabled": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "AutoMinorVersionUpgrade": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "CacheNodeType": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "CacheParameterGroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "CacheSecurityGroupNames": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "CacheSubnetGroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Engine": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "EngineVersion": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "NotificationTopicArn": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "NumCacheClusters": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "Port": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "PreferredCacheClusterAZs": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "PreferredMaintenanceWindow": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ReplicationGroupDescription": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SecurityGroupIds": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "SnapshotArns": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "SnapshotRetentionLimit": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "SnapshotWindow": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -4852,7 +4852,7 @@
             "additionalProperties": false,
             "properties": {
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             }
           },
@@ -4888,13 +4888,13 @@
             "additionalProperties": false,
             "properties": {
               "CacheSecurityGroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "EC2SecurityGroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "EC2SecurityGroupOwnerId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -4935,10 +4935,10 @@
             "additionalProperties": false,
             "properties": {
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SubnetIds": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -4979,10 +4979,10 @@
             "additionalProperties": false,
             "properties": {
               "ApplicationName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             }
           },
@@ -5018,10 +5018,10 @@
             "additionalProperties": false,
             "properties": {
               "ApplicationName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SourceBundle": {
                 "$ref": "#/definitions/property_types/aws-properties-beanstalk-sourcebundle"
@@ -5065,19 +5065,19 @@
             "additionalProperties": false,
             "properties": {
               "ApplicationName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "EnvironmentId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "OptionSettings": {
                 "$ref": "#/definitions/property_types/aws-properties-beanstalk-option-settings"
               },
               "SolutionStackName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SourceConfiguration": {
                 "$ref": "#/definitions/property_types/aws-properties-beanstalk-configurationtemplate-sourceconfiguration"
@@ -5120,34 +5120,34 @@
             "additionalProperties": false,
             "properties": {
               "ApplicationName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "CNAMEPrefix": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "EnvironmentName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "OptionSettings": {
                 "$ref": "#/definitions/property_types/aws-properties-beanstalk-option-settings"
               },
               "SolutionStackName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Tags": {
                 "$ref": "#/definitions/property_types/aws-properties-resource-tags"
               },
               "TemplateName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Tier": {
                 "$ref": "#/definitions/property_types/aws-properties-beanstalk-environment-tier"
               },
               "VersionLabel": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -5193,7 +5193,7 @@
                 "$ref": "#/definitions/property_types/aws-properties-ec2-elb-AppCookieStickinessPolicy"
               },
               "AvailabilityZones": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "ConnectionDrainingPolicy": {
                 "$ref": "#/definitions/property_types/aws-properties-ec2-elb-connectiondrainingpolicy"
@@ -5202,19 +5202,19 @@
                 "$ref": "#/definitions/property_types/aws-properties-ec2-elb-connectionsettings"
               },
               "CrossZone": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "HealthCheck": {
                 "$ref": "#/definitions/property_types/aws-properties-ec2-elb-health-check"
               },
               "Instances": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "LBCookieStickinessPolicy": {
                 "$ref": "#/definitions/property_types/aws-properties-ec2-elb-LBCookieStickinessPolicy"
               },
               "LoadBalancerName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Listeners": {
                 "$ref": "#/definitions/property_types/aws-properties-ec2-elb-listener"
@@ -5223,13 +5223,13 @@
                 "$ref": "#/definitions/property_types/aws-properties-ec2-elb-policy"
               },
               "Scheme": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SecurityGroups": {
                 "description": "<p><span class=\"emphasis\"><em>Required</em></span>: No</p><p><span class=\"emphasis\"><em>Type</em></span>: A list of security groups assigned to your load balancer within your\n                  virtual private cloud (VPC).</p><p><span class=\"emphasis\"><em>Update requires</em></span>: <a class=\"link\" href=\"http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt\">No interruption</a></p>"
               },
               "Subnets": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "Tags": {
                 "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -5278,7 +5278,7 @@
                 "description": "<p>Additional options to specify for the Amazon ES domain. For more information, see\n              <a class=\"ulink\" href=\"http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-createupdatedomains.html#es-createdomain-configure-advanced-options\" target=\"_blank\">Configuring Advanced Options</a> in the\n            <em class=\"citetitle\">Amazon Elasticsearch Service Developer Guide</em>.</p><p><span class=\"emphasis\"><em>Required</em></span>: No</p><p><span class=\"emphasis\"><em>Type</em></span>: A JSON object consisting of a string key-value pair, such\n            as:</p><pre class=\"programlisting\"><code class=\"nohighlight\">{\n  \"rest.action.multi.allow_explicit_index\": \"true\"\n}</code></pre><p><span class=\"emphasis\"><em>Update requires</em></span>: <a class=\"link\" href=\"http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement\">Replacement</a></p>"
               },
               "DomainName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "EBSOptions": {
                 "$ref": "#/definitions/property_types/aws-properties-elasticsearch-domain-ebsoptions"
@@ -5341,25 +5341,25 @@
                 "$ref": "#/definitions/property_types/aws-properties-emr-cluster-jobflowinstancesconfig"
               },
               "JobFlowRole": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "LogUri": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ReleaseLabel": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ServiceRole": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Tags": {
                 "$ref": "#/definitions/property_types/aws-properties-resource-tags"
               },
               "VisibleToAllUsers": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               }
             },
             "required": [
@@ -5402,7 +5402,7 @@
             "additionalProperties": false,
             "properties": {
               "BidPrice": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Configurations": {
                 "$ref": "#/definitions/property_types/aws-properties-emr-cluster-configuration"
@@ -5411,22 +5411,22 @@
                 "$ref": "#/definitions/property_types/aws-properties-emr-ebsconfiguration"
               },
               "InstanceCount": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "InstanceRole": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "InstanceType": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "JobFlowId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Market": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -5469,16 +5469,16 @@
             "additionalProperties": false,
             "properties": {
               "ActionOnFailure": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "HadoopJarStep": {
                 "$ref": "#/definitions/property_types/aws-properties-emr-step-hadoopjarstepconfig"
               },
               "JobFlowId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -5521,22 +5521,22 @@
             "additionalProperties": false,
             "properties": {
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "EventPattern": {
                 "type": "object"
               },
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "RoleArn": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ScheduleExpression": {
                 "description": "<p>The schedule or rate (frequency) that determines when CloudWatch Events runs the rule. For more information, see <a class=\"ulink\" href=\"http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/ScheduledEvents.html\" target=\"_blank\">Schedule Expression Syntax for Rules</a> in the <em class=\"citetitle\">Amazon CloudWatch Developer Guide</em>.</p><p><span class=\"emphasis\"><em>Required</em></span>: No</p><p><span class=\"emphasis\"><em>Required</em></span>: Conditional. You must specify this property, the <code class=\"code\">EventPattern</code> property, or both.</p><p><span class=\"emphasis\"><em>Update requires</em></span>: <a class=\"link\" href=\"http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt\">No interruption</a></p>"
               },
               "State": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Targets": {
                 "$ref": "#/definitions/property_types/aws-properties-events-rule-target"
@@ -5575,10 +5575,10 @@
             "additionalProperties": false,
             "properties": {
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "RoutingStrategy": {
                 "$ref": "#/definitions/property_types/aws-properties-gamelift-alias-routingstrategy"
@@ -5622,13 +5622,13 @@
             "additionalProperties": false,
             "properties": {
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "StorageLocation": {
                 "$ref": "#/definitions/property_types/aws-properties-gamelift-build-storagelocation"
               },
               "Version": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             }
           },
@@ -5664,37 +5664,37 @@
             "additionalProperties": false,
             "properties": {
               "BuildId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DesiredEC2Instances": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "EC2InboundPermissions": {
                 "$ref": "#/definitions/property_types/aws-properties-gamelift-fleet-ec2inboundpermission"
               },
               "EC2InstanceType": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "LogPaths": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "MaxSize": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "MinSize": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ServerLaunchParameters": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ServerLaunchPath": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -5738,13 +5738,13 @@
             "additionalProperties": false,
             "properties": {
               "Serial": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "Status": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "UserName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -5784,10 +5784,10 @@
             "additionalProperties": false,
             "properties": {
               "ManagedPolicyArns": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "Path": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Policies": {
                 "$ref": "#/definitions/property_types/aws-properties-iam-policy"
@@ -5826,7 +5826,7 @@
             "additionalProperties": false,
             "properties": {
               "Path": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Roles": {
                 "description": "<p>The roles associated with this IAM instance profile.</p><p class=\"simpara\"><span class=\"emphasis\"><em>Required</em></span>: Yes</p><p class=\"simpara\"><span class=\"emphasis\"><em>Type</em></span>: List of references to <span class=\"type\">AWS::IAM::Role</span>s. Currently, a\n                  maximum of one role can be assigned to an instance profile.</p><p class=\"simpara\"><span class=\"emphasis\"><em>Update requires</em></span>: <a class=\"link\" href=\"http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt\">No interruption</a></p>"
@@ -5870,22 +5870,22 @@
             "additionalProperties": false,
             "properties": {
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Groups": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "Path": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "PolicyDocument": {
                 "type": "object"
               },
               "Roles": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "Users": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               }
             },
             "required": [
@@ -5925,19 +5925,19 @@
             "additionalProperties": false,
             "properties": {
               "Groups": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "PolicyDocument": {
                 "type": "object"
               },
               "PolicyName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Roles": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "Users": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               }
             },
             "required": [
@@ -5981,10 +5981,10 @@
                 "description": "<p>The IAM assume role policy that is associated with this role.</p><p><span class=\"emphasis\"><em>Required</em></span>: Yes</p><p><span class=\"emphasis\"><em>Type</em></span>: A JSON policy document.</p><p><span class=\"emphasis\"><em>Update requires</em></span>: <a class=\"link\" href=\"http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt\">No interruption</a></p><div class=\"aws-note\"><p class=\"aws-note\">Note</p><p>You can associate only one assume role policy with a role. For an example of\n                     an assume role policy, see <a class=\"link\" href=\"http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html#cfn-iam-role-templateexamples\" title=\"Template Examples\">Template Examples</a>.</p></div>"
               },
               "ManagedPolicyArns": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "Path": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Policies": {
                 "$ref": "#/definitions/property_types/aws-properties-iam-policy"
@@ -6027,16 +6027,16 @@
             "additionalProperties": false,
             "properties": {
               "Groups": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "LoginProfile": {
                 "$ref": "#/definitions/property_types/aws-properties-iam-user-loginprofile"
               },
               "ManagedPolicyArns": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "Path": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Policies": {
                 "$ref": "#/definitions/property_types/aws-properties-iam-policy"
@@ -6075,7 +6075,7 @@
             "additionalProperties": false,
             "properties": {
               "GroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Users": {
                 "description": "<p class=\"simpara\"><span class=\"emphasis\"><em>Required</em></span>: Yes</p><p class=\"simpara\"><span class=\"emphasis\"><em>Type</em></span>: List of users</p><p class=\"simpara\"><span class=\"emphasis\"><em>Update requires</em></span>: <a class=\"link\" href=\"http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt\">No interruption</a></p>"
@@ -6119,7 +6119,7 @@
             "additionalProperties": false,
             "properties": {
               "ShardCount": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "Tags": {
                 "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -6162,13 +6162,13 @@
             "additionalProperties": false,
             "properties": {
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Enabled": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "EnableKeyRotation": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "KeyPolicy": {
                 "type": "object"
@@ -6211,19 +6211,19 @@
             "additionalProperties": false,
             "properties": {
               "BatchSize": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "Enabled": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "EventSourceArn": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "FunctionName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "StartingPosition": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -6265,16 +6265,16 @@
             "additionalProperties": false,
             "properties": {
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "FunctionName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "FunctionVersion": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -6319,25 +6319,25 @@
                 "$ref": "#/definitions/property_types/aws-properties-lambda-function-code"
               },
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "FunctionName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Handler": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "MemorySize": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "Role": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Runtime": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Timeout": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "VpcConfig": {
                 "$ref": "#/definitions/property_types/aws-properties-lambda-function-vpcconfig"
@@ -6383,19 +6383,19 @@
             "additionalProperties": false,
             "properties": {
               "Action": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "FunctionName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Principal": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SourceAccount": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SourceArn": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -6437,13 +6437,13 @@
             "additionalProperties": false,
             "properties": {
               "CodeSha256": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "FunctionName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -6483,16 +6483,16 @@
             "additionalProperties": false,
             "properties": {
               "DestinationName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DestinationPolicy": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "RoleArn": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "TargetArn": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -6535,7 +6535,7 @@
             "additionalProperties": false,
             "properties": {
               "RetentionInDays": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               }
             }
           },
@@ -6571,10 +6571,10 @@
             "additionalProperties": false,
             "properties": {
               "LogGroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "LogStreamName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -6614,10 +6614,10 @@
             "additionalProperties": false,
             "properties": {
               "FilterPattern": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "LogGroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "MetricTransformations": {
                 "$ref": "#/definitions/property_types/aws-properties-logs-metricfilter-metrictransformation"
@@ -6662,16 +6662,16 @@
             "additionalProperties": false,
             "properties": {
               "DestinationArn": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "FilterPattern": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "LogGroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "RoleArn": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -6716,34 +6716,34 @@
                 "$ref": "#/definitions/property_types/aws-properties-opsworks-stack-source"
               },
               "Attributes": {
-                "$ref": "basic_types.json#/definitions/key-value-pairs"
+                "$ref": "types.json#/definitions/key-value-pairs"
               },
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Domains": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "EnableSsl": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "Environment": {
                 "$ref": "#/definitions/property_types/aws-properties-opsworks-app-environment"
               },
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Shortname": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SslConfiguration": {
                 "$ref": "#/definitions/property_types/aws-properties-opsworks-app-sslconfiguration"
               },
               "StackId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Type": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -6785,10 +6785,10 @@
             "additionalProperties": false,
             "properties": {
               "ElasticLoadBalancerName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "LayerId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -6829,43 +6829,43 @@
             "additionalProperties": false,
             "properties": {
               "AmiId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Architecture": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "AutoScalingType": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "AvailabilityZone": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "EbsOptimized": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "InstallUpdatesOnBoot": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "InstanceType": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "LayerIds": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "Os": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "RootDeviceType": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SshKeyName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "StackId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SubnetId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "TimeBasedAutoScaling": {
                 "$ref": "#/definitions/property_types/aws-properties-opsworks-instance-timebasedautoscaling"
@@ -6910,28 +6910,28 @@
             "additionalProperties": false,
             "properties": {
               "Attributes": {
-                "$ref": "basic_types.json#/definitions/key-value-pairs"
+                "$ref": "types.json#/definitions/key-value-pairs"
               },
               "AutoAssignElasticIps": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "AutoAssignPublicIps": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "CustomInstanceProfileArn": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "CustomRecipes": {
                 "$ref": "#/definitions/property_types/aws-properties-opsworks-layer-recipes"
               },
               "CustomSecurityGroupIds": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "EnableAutoHealing": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "InstallUpdatesOnBoot": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "LifecycleEventConfiguration": {
                 "$ref": "#/definitions/property_types/aws-properties-opsworks-layer-lifecycleeventconfiguration"
@@ -6940,19 +6940,19 @@
                 "$ref": "#/definitions/property_types/aws-properties-opsworks-layer-loadbasedautoscaling"
               },
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Packages": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "Shortname": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "StackId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Type": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "VolumeConfigurations": {
                 "$ref": "#/definitions/property_types/aws-properties-opsworks-layer-volumeconfig"
@@ -7001,10 +7001,10 @@
             "additionalProperties": false,
             "properties": {
               "AgentVersion": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Attributes": {
-                "$ref": "basic_types.json#/definitions/key-value-pairs"
+                "$ref": "types.json#/definitions/key-value-pairs"
               },
               "ChefConfiguration": {
                 "$ref": "#/definitions/property_types/aws-properties-opsworks-stack-chefconfiguration"
@@ -7019,40 +7019,40 @@
                 "type": "object"
               },
               "DefaultAvailabilityZone": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DefaultInstanceProfileArn": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DefaultOs": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DefaultRootDeviceType": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DefaultSshKeyName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DefaultSubnetId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "HostnameTheme": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ServiceRoleArn": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "UseCustomCookbooks": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "UseOpsworksSecurityGroups": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "VpcId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -7094,55 +7094,55 @@
             "additionalProperties": false,
             "properties": {
               "AvailabilityZones": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "BackupRetentionPeriod": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "DatabaseName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DBClusterParameterGroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DBSubnetGroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Engine": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "EngineVersion": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "KmsKeyId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "MasterUsername": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "MasterUserPassword": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Port": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "PreferredBackupWindow": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "PreferredMaintenanceWindow": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SnapshotIdentifier": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "StorageEncrypted": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "Tags": {
                 "$ref": "#/definitions/property_types/aws-properties-resource-tags"
               },
               "VpcSecurityGroupIds": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               }
             },
             "required": [
@@ -7188,7 +7188,7 @@
                 "description": "<p>The database family of this DB cluster parameter group, such as\n                     <code class=\"code\">aurora5.6</code>.</p><p><span class=\"emphasis\"><em>Required</em></span>: Yes</p><p><span class=\"emphasis\"><em>Type:</em></span> String</p><p><span class=\"emphasis\"><em>Update requires</em></span>: <a class=\"link\" href=\"http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement\">Replacement</a></p>"
               },
               "Parameters": {
-                "$ref": "basic_types.json#/definitions/key-value-pairs"
+                "$ref": "types.json#/definitions/key-value-pairs"
               },
               "Tags": {
                 "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -7233,100 +7233,100 @@
             "additionalProperties": false,
             "properties": {
               "AllocatedStorage": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "AllowMajorVersionUpgrade": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "AutoMinorVersionUpgrade": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "AvailabilityZone": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "BackupRetentionPeriod": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "CharacterSetName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DBClusterIdentifier": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DBInstanceClass": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DBInstanceIdentifier": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DBName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DBParameterGroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DBSecurityGroups": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "DBSnapshotIdentifier": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DBSubnetGroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Engine": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "EngineVersion": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Iops": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "KmsKeyId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "LicenseModel": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "MasterUsername": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "MasterUserPassword": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "MultiAZ": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "OptionGroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Port": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "PreferredBackupWindow": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "PreferredMaintenanceWindow": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "PubliclyAccessible": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "SourceDBInstanceIdentifier": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "StorageEncrypted": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "StorageType": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Tags": {
                 "$ref": "#/definitions/property_types/aws-properties-resource-tags"
               },
               "VPCSecurityGroups": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               }
             },
             "required": [
@@ -7372,7 +7372,7 @@
                 "description": "<p>The database family of this RDS parameter group. For example, <code class=\"code\">\"MySQL5.1\"</code>.</p><p><span class=\"emphasis\"><em>Required</em></span>: Yes</p><p><span class=\"emphasis\"><em>Type:</em></span> String</p><p><span class=\"emphasis\"><em>Update requires</em></span>: Updates are not supported.</p>"
               },
               "Parameters": {
-                "$ref": "basic_types.json#/definitions/key-value-pairs"
+                "$ref": "types.json#/definitions/key-value-pairs"
               },
               "Tags": {
                 "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -7416,13 +7416,13 @@
             "additionalProperties": false,
             "properties": {
               "EC2VpcId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DBSecurityGroupIngress": {
                 "$ref": "#/definitions/property_types/aws-properties-rds-security-group-rule"
               },
               "GroupDescription": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Tags": {
                 "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -7466,19 +7466,19 @@
             "additionalProperties": false,
             "properties": {
               "CIDRIP": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DBSecurityGroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "EC2SecurityGroupId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "EC2SecurityGroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "EC2SecurityGroupOwnerId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -7518,10 +7518,10 @@
             "additionalProperties": false,
             "properties": {
               "DBSubnetGroupDescription": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SubnetIds": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "Tags": {
                 "$ref": "#/definitions/property_types/aws-properties-resource-tags"
@@ -7565,19 +7565,19 @@
             "additionalProperties": false,
             "properties": {
               "Enabled": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "EventCategories": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "SnsTopicArn": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SourceIds": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "SourceType": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -7617,13 +7617,13 @@
             "additionalProperties": false,
             "properties": {
               "EngineName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "MajorEngineVersion": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "OptionGroupDescription": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "OptionConfigurations": {
                 "$ref": "#/definitions/property_types/aws-properties-rds-optiongroup-optionconfigurations"
@@ -7672,79 +7672,79 @@
             "additionalProperties": false,
             "properties": {
               "AllowVersionUpgrade": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "AutomatedSnapshotRetentionPeriod": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "AvailabilityZone": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ClusterParameterGroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ClusterSecurityGroups": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "ClusterSubnetGroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ClusterType": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ClusterVersion": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DBName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ElasticIp": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Encrypted": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "HsmClientCertificateIdentifier": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "HsmConfigurationIdentifier": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "KmsKeyId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "MasterUsername": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "MasterUserPassword": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "NodeType": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "NumberOfNodes": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "OwnerAccount": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Port": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "PreferredMaintenanceWindow": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "PubliclyAccessible": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "SnapshotClusterIdentifier": {
                 "description": "<p>The name of the cluster the source snapshot was created from.</p><p><span class=\"emphasis\"><em>Required</em></span>: No</p><p><span class=\"emphasis\"><em>Required</em></span>: Conditional. This property is required if your IAM policy includes\n                  a restriction on the cluster name, where the resource element specifies anything\n                  other than the wildcard character (<code class=\"code\">*</code>) for the cluster name.</p><p><span class=\"emphasis\"><em>Update requires</em></span>: <a class=\"link\" href=\"http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement\">Replacement</a></p>"
               },
               "SnapshotIdentifier": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "VpcSecurityGroupIds": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               }
             },
             "required": [
@@ -7788,10 +7788,10 @@
             "additionalProperties": false,
             "properties": {
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ParameterGroupFamily": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Parameters": {
                 "$ref": "#/definitions/property_types/aws-property-redshift-clusterparametergroup-parameter"
@@ -7835,7 +7835,7 @@
             "additionalProperties": false,
             "properties": {
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -7875,16 +7875,16 @@
             "additionalProperties": false,
             "properties": {
               "ClusterSecurityGroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "CIDRIP": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "EC2SecurityGroupName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "EC2SecurityGroupOwnerId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -7924,10 +7924,10 @@
             "additionalProperties": false,
             "properties": {
               "Description": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SubnetIds": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               }
             },
             "required": [
@@ -8017,7 +8017,7 @@
                 "$ref": "#/definitions/property_types/aws-properties-route53-hostedzone-hostedzonetags"
               },
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "VPCs": {
                 "$ref": "#/definitions/property_types/aws-resource-route53-hostedzone-hostedzonevpcs"
@@ -8063,43 +8063,43 @@
                 "$ref": "#/definitions/property_types/aws-properties-route53-aliastarget"
               },
               "Comment": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Failover": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "GeoLocation": {
                 "$ref": "#/definitions/property_types/aws-properties-route53-recordset-geolocation"
               },
               "HealthCheckId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "HostedZoneId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "HostedZoneName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Region": {
                 "description": "<p>Latency resource record sets only: The Amazon EC2 region where the resource that is\n                  specified in this resource record set resides. The resource typically is an AWS\n                  resource, for example, Amazon EC2 instance or an Elastic Load Balancing load balancer, and is referred\n                  to by an IP address or a DNS domain name, depending on the record type.</p><p>When Amazon Route\u00a053 receives a DNS query for a domain name and type for which you have\n                  created latency resource record sets, Amazon Route\u00a053 selects the latency resource record\n                  set that has the lowest latency between the end user and the associated Amazon EC2\n                  region. Amazon Route\u00a053 then returns the value that is associated with the selected resource\n                  record set.</p><p>The following restrictions must be followed:</p><div class=\"itemizedlist\"><ul class=\"itemizedlist\" type=\"disc\"><li class=\"listitem\"><p>You can only specify one resource record per latency resource record\n                        set.</p></li><li class=\"listitem\"><p>You can only create one latency resource record set for each Amazon EC2\n                        region.</p></li><li class=\"listitem\"><p>You are not required to create latency resource record sets for all Amazon EC2\n                        regions. Amazon Route\u00a053 will choose the region with the best latency from among the\n                        regions for which you create latency resource record sets.</p></li><li class=\"listitem\"><p>You cannot create both weighted and latency resource record sets that\n                        have the same values for the Name and Type elements.</p></li></ul></div><p>To see a list of regions by service, see <a class=\"ulink\" href=\"http://docs.aws.amazon.com/general/latest/gr/rande.html\" target=\"_blank\">Regions and Endpoints</a> in the\n                  <em class=\"citetitle\">AWS General Reference</em>.</p>"
               },
               "ResourceRecords": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               },
               "SetIdentifier": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "TTL": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Type": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Weight": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               }
             },
             "required": [
@@ -8140,13 +8140,13 @@
             "additionalProperties": false,
             "properties": {
               "Comment": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "HostedZoneId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "HostedZoneName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "RecordSets": {
                 "items": {
@@ -8192,10 +8192,10 @@
             "additionalProperties": false,
             "properties": {
               "AccessControl": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "BucketName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "CorsConfiguration": {
                 "$ref": "#/definitions/property_types/aws-properties-s3-bucket-cors"
@@ -8255,7 +8255,7 @@
             "additionalProperties": false,
             "properties": {
               "Bucket": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "PolicyDocument": {
                 "type": "object"
@@ -8331,13 +8331,13 @@
             "additionalProperties": false,
             "properties": {
               "DisplayName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Subscription": {
                 "$ref": "#/definitions/property_types/aws-properties-sns-subscription"
               },
               "TopicName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             }
           },
@@ -8376,7 +8376,7 @@
                 "type": "object"
               },
               "Topics": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               }
             },
             "required": [
@@ -8417,25 +8417,25 @@
             "additionalProperties": false,
             "properties": {
               "DelaySeconds": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "MaximumMessageSize": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "MessageRetentionPeriod": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "QueueName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "ReceiveMessageWaitTimeSeconds": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               },
               "RedrivePolicy": {
                 "$ref": "#/definitions/property_types/aws-properties-sqs-queues-redrivepolicy"
               },
               "VisibilityTimeout": {
-                "$ref": "basic_types.json#/definitions/integer"
+                "$ref": "types.json#/definitions/integer"
               }
             }
           },
@@ -8474,7 +8474,7 @@
                 "type": "object"
               },
               "Queues": {
-                "$ref": "basic_types.json#/definitions/list<string>"
+                "$ref": "types.json#/definitions/list<string>"
               }
             },
             "required": [
@@ -8558,7 +8558,7 @@
                 "$ref": "#/definitions/property_types/aws-properties-waf-bytematchset-bytematchtuples"
               },
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -8607,7 +8607,7 @@
                 "description": "<p>If the viewer did use an HTTP proxy or a load balancer to send the\n                    request</p>"
               },
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
@@ -8647,10 +8647,10 @@
             "additionalProperties": false,
             "properties": {
               "MetricName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Predicates": {
                 "$ref": "#/definitions/property_types/aws-properties-waf-rule-predicates"
@@ -8694,7 +8694,7 @@
             "additionalProperties": false,
             "properties": {
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SizeConstraints": {
                 "$ref": "#/definitions/property_types/aws-properties-waf-sizeconstraintset-sizeconstraint"
@@ -8738,7 +8738,7 @@
             "additionalProperties": false,
             "properties": {
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "SqlInjectionMatchTuples": {
                 "$ref": "#/definitions/property_types/aws-properties-waf-sqlinjectionmatchset-sqlinjectionmatchtuples"
@@ -8784,10 +8784,10 @@
                 "$ref": "#/definitions/property_types/aws-properties-waf-webacl-action"
               },
               "MetricName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "Rules": {
                 "$ref": "#/definitions/property_types/aws-properties-waf-webacl-rules"
@@ -8832,7 +8832,7 @@
             "additionalProperties": false,
             "properties": {
               "Name": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "XssMatchTuples": {
                 "$ref": "#/definitions/property_types/aws-properties-waf-xssmatchset-xssmatchtuple"
@@ -8875,22 +8875,22 @@
             "additionalProperties": false,
             "properties": {
               "BundleId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "DirectoryId": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "UserName": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               },
               "RootVolumeEncryptionEnabled": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "UserVolumeEncryptionEnabled": {
-                "$ref": "basic_types.json#/definitions/boolean"
+                "$ref": "types.json#/definitions/boolean"
               },
               "VolumeEncryptionKey": {
-                "$ref": "basic_types.json#/definitions/string"
+                "$ref": "types.json#/definitions/string"
               }
             },
             "required": [
