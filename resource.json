@@ -469,88 +469,8 @@
       "$ref": "#/definitions/resource_types/AWS::WorkSpaces::Workspace"
     }
   ],
+
   "definitions": {
-    "attributes": {
-      "CreationPolicy": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": [
-          "ResourceSignal"
-        ],
-        "properties": {
-          "ResourceSignal": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-              "Count": {
-                "$ref": "types.json#/definitions/integer"
-              },
-              "Timeout": {
-                "$ref": "types.json#/definitions/string"
-              }
-            }
-          }
-        }
-      },
-      "DependsOn": {
-        "oneOf": [
-          {
-            "type": "string"
-          },
-          {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "DeletionPolicy": {
-        "type": "string",
-        "enum": [
-          "Delete",
-          "Retain",
-          "Snapshot"
-        ]
-      },
-      "UpdatePolicy": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "AutoScalingRollingUpdate": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-              "MaxBatchSize": {
-                "$ref": "types.json#/definitions/integer"
-              },
-              "MinInstancesInService": {
-                "$ref": "types.json#/definitions/integer"
-              },
-              "MinSuccessfulInstancesPercent": {
-                "$ref": "types.json#/definitions/integer"
-              },
-              "PauseTime": {
-                "$ref": "types.json#/definitions/string"
-              },
-              "SuspendProcesses": {
-                "$ref": "types.json#/definitions/list<string>"
-              },
-              "WaitOnResourceSignals": {
-                "$ref": "types.json#/definitions/boolean"
-              }
-            }
-          },
-          "AutoScalingScheduledAction": {
-            "type": "object",
-            "additionalProperties": false,
-            "IgnoreUnmodifiedGroupSizeProperties": {
-              "$ref": "types.json#/definitions/boolean"
-            }
-          }
-        }
-      }
-    },
     "resource_types": {
       "AWS::ApiGateway::Account": {
         "type": "object",
