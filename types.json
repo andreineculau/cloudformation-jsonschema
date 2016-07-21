@@ -1,104 +1,90 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+
   "definitions": {
     "string": {
-      "oneOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "#/definitions/function"
-        }
-      ]
+      "oneOf": [{
+        "type": "string"
+      }, {
+        "$ref": "#/definitions/function"
+      }]
     },
-    "integer": {
-      "oneOf": [
-        {
-          "type": "string",
-          "pattern": "^-?[0-9]+$"
-        },
-        {
-          "type": "integer"
-        },
-        {
-          "$ref": "#/definitions/function"
-        }
-      ]
-    },
-    "boolean": {
-      "oneOf": [
-        {
-          "type": "boolean"
-        },
-        {
-          "type": "string",
-          "enum": [
-            "True",
-            "False",
-            "true",
-            "false"
-          ]
-        },
-        {
-          "$ref": "#/definitions/function"
-        }
-      ]
-    },
-    "primitive": {
-      "anyOf": [
-        { "$ref": "#/definitions/string" },
-        { "$ref": "#/definitions/integer" },
-        { "$ref": "#/definitions/boolean" }
-      ]
-    },
-    "list<string>": {
-      "oneOf": [
-        {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/string"
-          }
-        },
-        {
-          "$ref": "#/definitions/function"
-        }
 
-      ]
+    "integer": {
+      "oneOf": [{
+        "type": "string",
+        "pattern": "^-?[0-9]+$"
+      }, {
+        "type": "integer"
+      }, {
+        "$ref": "#/definitions/function"
+      }]
     },
+
+    "boolean": {
+      "oneOf": [{
+        "type": "boolean"
+      }, {
+        "type": "string",
+        "enum": [
+          "True",
+          "False",
+          "true",
+          "false"
+        ]
+      }, {
+        "$ref": "#/definitions/function"
+      }]
+    },
+
+    "primitive": {
+      "anyOf": [{
+        "$ref": "#/definitions/string"
+      }, {
+        "$ref": "#/definitions/integer"
+      }, {
+        "$ref": "#/definitions/boolean"
+      }]
+    },
+
+    "list<string>": {
+      "oneOf": [{
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/string"
+        }
+      }, {
+        "$ref": "#/definitions/function"
+      }]
+    },
+
     "key-value-pairs": {
       "type": "object",
       "additionalProperties": {
         "$ref": "#/definitions/string"
       }
     },
+
     "function": {
-      "oneOf": [
-        {
-          "$ref": "#/definitions/functions/Fn::Base64"
-        },
-        {
-          "$ref": "#/definitions/functions/Fn::FindInMap"
-        },
-        {
-          "$ref": "#/definitions/functions/Fn::GetAtt"
-        },
-        {
-          "$ref": "#/definitions/functions/Fn::GetAZs"
-        },
-        {
-          "$ref": "#/definitions/functions/Fn::Join"
-        },
-        {
-          "$ref": "#/definitions/condition_function"
-        },
-        {
-          "$ref": "#/definitions/functions/Fn::Select"
-        },
-        {
-          "$ref": "#/definitions/functions/Ref"
-        }
-      ]
+      "oneOf": [{
+        "$ref": "#/definitions/functions/Fn::Base64"
+      }, {
+        "$ref": "#/definitions/functions/Fn::FindInMap"
+      }, {
+        "$ref": "#/definitions/functions/Fn::GetAtt"
+      }, {
+        "$ref": "#/definitions/functions/Fn::GetAZs"
+      }, {
+        "$ref": "#/definitions/functions/Fn::Join"
+      }, {
+        "$ref": "#/definitions/condition_function"
+      }, {
+        "$ref": "#/definitions/functions/Fn::Select"
+      }, {
+        "$ref": "#/definitions/functions/Ref"
+      }]
     },
+
     "functions": {
       "Fn::Base64": {
         "type": "object",
@@ -108,8 +94,11 @@
             "$ref": "#/definitions/string"
           }
         },
-        "required": ["Fn::Base64"]
+        "required": [
+          "Fn::Base64"
+        ]
       },
+
       "Fn::FindInMap": {
         "type": "object",
         "additionalProperties": false,
@@ -119,22 +108,21 @@
             "minItems": 3,
             "maxItems": 3,
             "items": {
-              "oneOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "$ref": "#/definitions/functions/Fn::FindInMap"
-                },
-                {
-                  "$ref": "#/definitions/functions/Ref"
-                }
-              ]
+              "oneOf": [{
+                "type": "string"
+              }, {
+                "$ref": "#/definitions/functions/Fn::FindInMap"
+              }, {
+                "$ref": "#/definitions/functions/Ref"
+              }]
             }
           }
         },
-        "required": ["Fn::FindInMap"]
+        "required": [
+          "Fn::FindInMap"
+        ]
       },
+
       "Fn::GetAtt": {
         "type": "object",
         "additionalProperties": false,
@@ -143,44 +131,39 @@
             "type": "array",
             "minItems": 2,
             "maxItems": 2,
-            "items": [
-              {
+            "items": [{
+              "type": "string"
+            }, {
+              "oneOf": [{
                 "type": "string"
-              },
-              {
-                "oneOf": [
-                  {
-                    "type": "string"
-                  },
-                  {
-                    "$ref": "#/definitions/functions/Ref"
-                  }
-                ]
-              }
-            ]
-
+              }, {
+                "$ref": "#/definitions/functions/Ref"
+              }]
+            }]
           }
         },
-        "required": ["Fn::GetAtt"]
+        "required": [
+          "Fn::GetAtt"
+        ]
       },
+
       "Fn::GetAZs": {
         "type": "object",
         "additionalProperties": false,
         "properties": {
           "Fn::GetAZs": {
-            "oneOf": [
-              {
-                "type": "string"
-              },
-              {
-                "$ref": "#/definitions/functions/Ref"
-              }
-            ]
-
+            "oneOf": [{
+              "type": "string"
+            }, {
+              "$ref": "#/definitions/functions/Ref"
+            }]
           }
         },
-        "required": ["Fn::GetAZs"]
+        "required": [
+          "Fn::GetAZs"
+        ]
       },
+
       "Fn::Join": {
         "type": "object",
         "additionalProperties": false,
@@ -189,28 +172,25 @@
             "type": "array",
             "minItems": 2,
             "maxItems": 2,
-            "items": [
-              {
-                "type": "string"
-              },
-              {
-                "oneOf": [
-                  {
-                    "type": "array",
-                    "items": {
-                      "$ref": "#/definitions/primitive"
-                    }
-                  },
-                  {
-                    "$ref": "#/definitions/function"
-                  }
-                ]
-              }
-            ]
+            "items": [{
+              "type": "string"
+            }, {
+              "oneOf": [{
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/primitive"
+                }
+              }, {
+                "$ref": "#/definitions/function"
+              }]
+            }]
           }
         },
-        "required": ["Fn::Join"]
+        "required": [
+          "Fn::Join"
+        ]
       },
+
       "Fn::Select": {
         "type": "object",
         "additionalProperties": false,
@@ -219,17 +199,15 @@
             "type": "array",
             "minItems": 2,
             "maxItems": 2,
-            "items": [
-              {
-                "$ref": "#/definitions/integer"
-              },
-              {
-              }
-            ]
+            "items": [{
+              "$ref": "#/definitions/integer"
+            }, {
+            }]
           }
         },
         "required": ["Fn::Select"]
       },
+
       "Ref": {
         "type": "object",
         "additionalProperties": false,
@@ -238,29 +216,27 @@
             "$ref": "#/definitions/string"
           }
         },
-        "required": ["Ref"]
+        "required": [
+          "Ref"
+        ]
       }
     },
+
     "condition_function": {
       "type": "object",
-      "oneOf": [
-        {
-          "$ref": "#/definitions/condition_functions/Fn::And"
-        },
-        {
-          "$ref": "#/definitions/condition_functions/Fn::Equals"
-        },
-        {
-          "$ref": "#/definitions/condition_functions/Fn::If"
-        },
-        {
-          "$ref": "#/definitions/condition_functions/Fn::Not"
-        },
-        {
-          "$ref": "#/definitions/condition_functions/Fn::Or"
-        }
-      ]
+      "oneOf": [{
+        "$ref": "#/definitions/condition_functions/Fn::And"
+      }, {
+        "$ref": "#/definitions/condition_functions/Fn::Equals"
+      }, {
+        "$ref": "#/definitions/condition_functions/Fn::If"
+      }, {
+        "$ref": "#/definitions/condition_functions/Fn::Not"
+      }, {
+        "$ref": "#/definitions/condition_functions/Fn::Or"
+      }]
     },
+
     "condition_functions": {
       "Fn::And": {
         "type": "object",
@@ -271,19 +247,19 @@
             "minItems": 2,
             "maxItems": 10,
             "items": {
-              "oneOf": [
-                {
-                  "$ref": "#/definitions/condition"
-                },
-                {
-                  "$ref": "#/definitions/condition_function"
-                }
-              ]
+              "oneOf": [{
+                "$ref": "#/definitions/condition"
+              }, {
+                "$ref": "#/definitions/condition_function"
+              }]
             }
           }
         },
-        "required": ["Fn::And"]
+        "required": [
+          "Fn::And"
+        ]
       },
+
       "Fn::Equals": {
         "type": "object",
         "additionalProperties": false,
@@ -293,25 +269,23 @@
             "minItems": 2,
             "maxItems": 2,
             "items": {
-              "anyOf": [
-                {
-                  "$ref": "#/definitions/string"
-                },
-                {
-                  "$ref": "#/definitions/integer"
-                },
-                {
-                  "$ref": "#/definitions/boolean"
-                },
-                {
-                  "$ref": "#/definitions/function"
-                }
-              ]
+              "anyOf": [{
+                "$ref": "#/definitions/string"
+              }, {
+                "$ref": "#/definitions/integer"
+              }, {
+                "$ref": "#/definitions/boolean"
+              }, {
+                "$ref": "#/definitions/function"
+              }]
             }
           }
         },
-        "required": ["Fn::Equals"]
+        "required": [
+          "Fn::Equals"
+        ]
       },
+
       "Fn::If": {
         "type": "object",
         "additionalProperties": false,
@@ -320,17 +294,17 @@
             "type": "array",
             "minItems": 3,
             "maxItems": 3,
-            "items": [
-              {
-                "type": "string"
-              },
-              {},
-              {}
-            ]
+            "items": [{
+              "type": "string"
+            }, {
+            }]
           }
         },
-        "required": ["Fn::If"]
+        "required": [
+          "Fn::If"
+        ]
       },
+
       "Fn::Not": {
         "type": "object",
         "additionalProperties": false,
@@ -340,19 +314,19 @@
             "minItems": 1,
             "maxItems": 1,
             "items": {
-              "oneOf": [
-                {
-                  "$ref": "#/definitions/condition"
-                },
-                {
-                  "$ref": "#/definitions/condition_function"
-                }
-              ]
+              "oneOf": [{
+                "$ref": "#/definitions/condition"
+              }, {
+                "$ref": "#/definitions/condition_function"
+              }]
             }
           }
         },
-        "required": ["Fn::Not"]
+        "required": [
+          "Fn::Not"
+        ]
       },
+
       "Fn::Or": {
         "type": "object",
         "additionalProperties": false,
@@ -362,20 +336,20 @@
             "minItems": 2,
             "maxItems": 10,
             "items": {
-              "oneOf": [
-                {
-                  "$ref": "#/definitions/condition"
-                },
-                {
-                  "$ref": "#/definitions/condition_function"
-                }
-              ]
+              "oneOf": [{
+                "$ref": "#/definitions/condition"
+              }, {
+                "$ref": "#/definitions/condition_function"
+              }]
             }
           }
         },
-        "required": ["Fn::Or"]
+        "required": [
+          "Fn::Or"
+        ]
       }
     },
+
     "condition": {
       "type": "object",
       "additionalProperties": false,
@@ -384,7 +358,9 @@
           "type": "string"
         }
       },
-      "required": ["Condition"]
+      "required": [
+        "Condition"
+      ]
     }
   }
 }
