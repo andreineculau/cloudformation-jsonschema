@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::EC2::NetworkInterface",
+  "description": "Cloudformation template resource (AWS::EC2::NetworkInterface)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "Description": {
+          "$ref": "../types.json#/definitions/string"
+        },
+
+        "GroupSet": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+        "PrivateIpAddress": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "PrivateIpAddresses": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-ec2-network-interface-privateipspec"
+        },
+        "SecondaryPrivateIpAddressCount": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "SourceDestCheck": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "SubnetId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Tags": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-resource-tags"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::EC2::NetworkInterface"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

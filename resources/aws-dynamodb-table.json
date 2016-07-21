@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::DynamoDB::Table",
+  "description": "Cloudformation template resource (AWS::DynamoDB::Table)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "AttributeDefinitions": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-dynamodb-attributedef"
+        },
+
+        "GlobalSecondaryIndexes": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-dynamodb-gsi"
+        },
+        "KeySchema": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-dynamodb-keyschema"
+        },
+        "LocalSecondaryIndexes": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-dynamodb-lsi"
+        },
+        "ProvisionedThroughput": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-dynamodb-provisionedthroughput"
+        },
+        "StreamSpecification": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-dynamodb-streamspecification"
+        },
+        "TableName": {
+          "$ref": "../types.json#/definitions/string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::DynamoDB::Table"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

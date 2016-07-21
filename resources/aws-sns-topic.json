@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::SNS::Topic",
+  "description": "Cloudformation template resource (AWS::SNS::Topic)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "DisplayName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+
+        "Subscription": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-sns-subscription"
+        },
+        "TopicName": {
+          "$ref": "../types.json#/definitions/string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::SNS::Topic"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type"
+  ],
+  "additionalProperties": false
+}

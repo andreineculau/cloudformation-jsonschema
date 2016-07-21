@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::Config::DeliveryChannel",
+  "description": "Cloudformation template resource (AWS::Config::DeliveryChannel)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "ConfigSnapshotDeliveryProperties": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-config-deliverychannel-configsnapshotdeliveryproperties"
+        },
+
+        "Name": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "S3BucketName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "S3KeyPrefix": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "SnsTopicARN": {
+          "$ref": "../types.json#/definitions/string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::Config::DeliveryChannel"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

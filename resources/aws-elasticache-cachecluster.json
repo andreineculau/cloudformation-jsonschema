@@ -1,0 +1,107 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::ElastiCache::CacheCluster",
+  "description": "Cloudformation template resource (AWS::ElastiCache::CacheCluster)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "AutoMinorVersionUpgrade": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+
+        "AZMode": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "CacheNodeType": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "CacheParameterGroupName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "CacheSecurityGroupNames": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+        "CacheSubnetGroupName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "ClusterName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Engine": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "EngineVersion": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "NotificationTopicArn": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "NumCacheNodes": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Port": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "PreferredAvailabilityZone": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "PreferredAvailabilityZones": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+        "PreferredMaintenanceWindow": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "SnapshotArns": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+        "SnapshotName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "SnapshotRetentionLimit": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "SnapshotWindow": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Tags": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-resource-tags"
+        },
+        "VpcSecurityGroupIds": {
+          "$ref": "../types.json#/definitions/list<string>"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::ElastiCache::CacheCluster"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

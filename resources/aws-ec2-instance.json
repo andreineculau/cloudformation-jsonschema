@@ -1,0 +1,128 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::EC2::Instance",
+  "description": "Cloudformation template resource (AWS::EC2::Instance)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "Affinity": {
+          "$ref": "../types.json#/definitions/string"
+        },
+
+        "AvailabilityZone": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "BlockDeviceMappings": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-ec2-blockdev-mapping"
+        },
+        "DisableApiTermination": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "EbsOptimized": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "HostId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "IamInstanceProfile": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "ImageId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "InstanceInitiatedShutdownBehavior": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "InstanceType": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "KernelId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "KeyName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Monitoring": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "NetworkInterfaces": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-ec2-network-iface-embedded"
+        },
+        "PlacementGroupName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "PrivateIpAddress": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "RamdiskId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "SecurityGroupIds": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+        "SecurityGroups": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+        "SourceDestCheck": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "SsmAssociations": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-ec2-instance-ssmassociations"
+        },
+        "SubnetId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Tags": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-resource-tags"
+        },
+        "Tenancy": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "UserData": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Volumes": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-ec2-mount-point"
+        },
+        "AdditionalInfo": {
+          "$ref": "../types.json#/definitions/string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::EC2::Instance"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    },
+    "CreationPolicy": {
+      "$ref": "../resource-common.json#/definitions/CreationPolicy"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

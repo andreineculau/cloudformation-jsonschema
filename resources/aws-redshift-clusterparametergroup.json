@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::Redshift::ClusterParameterGroup",
+  "description": "Cloudformation template resource (AWS::Redshift::ClusterParameterGroup)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "Description": {
+          "$ref": "../types.json#/definitions/string"
+        },
+
+        "ParameterGroupFamily": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Parameters": {
+          "$ref": "../resource-property-types.json#/definitions/aws-property-redshift-clusterparametergroup-parameter"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::Redshift::ClusterParameterGroup"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

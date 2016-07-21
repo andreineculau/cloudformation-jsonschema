@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::CodePipeline::Pipeline",
+  "description": "Cloudformation template resource (AWS::CodePipeline::Pipeline)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "ArtifactStore": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-codepipeline-pipeline-artifactstore"
+        },
+
+        "DisableInboundStageTransitions": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-codepipeline-pipeline-disableinboundstagetransitions"
+        },
+        "Name": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "RestartExecutionOnUpdate": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "RoleArn": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Stages": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-codepipeline-pipeline-stages"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::CodePipeline::Pipeline"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

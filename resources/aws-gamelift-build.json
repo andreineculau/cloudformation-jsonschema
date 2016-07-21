@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::GameLift::Build",
+  "description": "Cloudformation template resource (AWS::GameLift::Build)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "Name": {
+          "$ref": "../types.json#/definitions/string"
+        },
+
+        "StorageLocation": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-gamelift-build-storagelocation"
+        },
+        "Version": {
+          "$ref": "../types.json#/definitions/string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::GameLift::Build"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type"
+  ],
+  "additionalProperties": false
+}

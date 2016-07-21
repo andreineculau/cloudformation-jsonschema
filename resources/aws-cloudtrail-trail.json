@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::CloudTrail::Trail",
+  "description": "Cloudformation template resource (AWS::CloudTrail::Trail)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "CloudWatchLogsLogGroupArn": {
+          "$ref": "../types.json#/definitions/string"
+        },
+
+        "CloudWatchLogsRoleArn": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "EnableLogFileValidation": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "IncludeGlobalServiceEvents": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "IsLogging": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "IsMultiRegionTrail": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "KMSKeyId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "S3BucketName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "S3KeyPrefix": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "SnsTopicName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Tags": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-resource-tags"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::CloudTrail::Trail"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

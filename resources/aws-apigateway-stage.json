@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::ApiGateway::Stage",
+  "description": "Cloudformation template resource (AWS::ApiGateway::Stage)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "CacheClusterEnabled": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+
+        "CacheClusterSize": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "ClientCertificateId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "DeploymentId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Description": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "MethodSettings": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-apitgateway-stage-methodsetting"
+        },
+        "RestApiId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "StageName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Variables": {
+          "$ref": "../types.json#/definitions/key-value-pairs"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::ApiGateway::Stage"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

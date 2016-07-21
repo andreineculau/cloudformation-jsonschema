@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::Elasticsearch::Domain",
+  "description": "Cloudformation template resource (AWS::Elasticsearch::Domain)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "AccessPolicies": {
+          "type": "object"
+        },
+
+        "AdvancedOptions": {
+          "description": "<p>Additional options to specify for the Amazon ES domain. For more information, see\n              <a class=\"ulink\" href=\"http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-createupdatedomains.html#es-createdomain-configure-advanced-options\" target=\"_blank\">Configuring Advanced Options</a> in the\n            <em class=\"citetitle\">Amazon Elasticsearch Service Developer Guide</em>.</p><p><span class=\"emphasis\"><em>Required</em></span>: No</p><p><span class=\"emphasis\"><em>Type</em></span>: A JSON object consisting of a string key-value pair, such\n            as:</p><pre class=\"programlisting\"><code class=\"nohighlight\">{\n  \"rest.action.multi.allow_explicit_index\": \"true\"\n}</code></pre><p><span class=\"emphasis\"><em>Update requires</em></span>: <a class=\"link\" href=\"http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement\">Replacement</a></p>"
+        },
+        "DomainName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "EBSOptions": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-elasticsearch-domain-ebsoptions"
+        },
+        "ElasticsearchClusterConfig": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-elasticsearch-domain-elasticsearchclusterconfig"
+        },
+        "SnapshotOptions": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-elasticsearch-domain-snapshotoptions"
+        },
+        "Tags": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-resource-tags"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::Elasticsearch::Domain"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type"
+  ],
+  "additionalProperties": false
+}

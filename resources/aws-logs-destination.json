@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::Logs::Destination",
+  "description": "Cloudformation template resource (AWS::Logs::Destination)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "DestinationName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+
+        "DestinationPolicy": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "RoleArn": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "TargetArn": {
+          "$ref": "../types.json#/definitions/string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::Logs::Destination"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

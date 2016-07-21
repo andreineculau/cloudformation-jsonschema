@@ -1,0 +1,95 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::AutoScaling::LaunchConfiguration",
+  "description": "Cloudformation template resource (AWS::AutoScaling::LaunchConfiguration)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "AssociatePublicIpAddress": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+
+        "BlockDeviceMappings": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-as-launchconfig-blockdev-mapping"
+        },
+        "ClassicLinkVPCId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "ClassicLinkVPCSecurityGroups": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+        "EbsOptimized": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "IamInstanceProfile": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "ImageId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "InstanceId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "InstanceMonitoring": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "InstanceType": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "KernelId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "KeyName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "PlacementTenancy": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "RamDiskId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "SecurityGroups": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+        "SpotPrice": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "UserData": {
+          "$ref": "../types.json#/definitions/string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::AutoScaling::LaunchConfiguration"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

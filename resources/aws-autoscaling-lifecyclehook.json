@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::AutoScaling::LifecycleHook",
+  "description": "Cloudformation template resource (AWS::AutoScaling::LifecycleHook)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "AutoScalingGroupName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+
+        "DefaultResult": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "HeartbeatTimeout": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "LifecycleTransition": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "NotificationMetadata": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "NotificationTargetARN": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "RoleARN": {
+          "$ref": "../types.json#/definitions/string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::AutoScaling::LifecycleHook"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

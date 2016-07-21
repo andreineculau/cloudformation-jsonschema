@@ -1,0 +1,140 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::RDS::DBInstance",
+  "description": "Cloudformation template resource (AWS::RDS::DBInstance)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "AllocatedStorage": {
+          "$ref": "../types.json#/definitions/string"
+        },
+
+        "AllowMajorVersionUpgrade": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "AutoMinorVersionUpgrade": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "AvailabilityZone": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "BackupRetentionPeriod": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "CharacterSetName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "DBClusterIdentifier": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "DBInstanceClass": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "DBInstanceIdentifier": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "DBName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "DBParameterGroupName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "DBSecurityGroups": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+        "DBSnapshotIdentifier": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "DBSubnetGroupName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Engine": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "EngineVersion": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Iops": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "KmsKeyId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "LicenseModel": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "MasterUsername": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "MasterUserPassword": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "MultiAZ": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "OptionGroupName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Port": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "PreferredBackupWindow": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "PreferredMaintenanceWindow": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "PubliclyAccessible": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "SourceDBInstanceIdentifier": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "StorageEncrypted": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "StorageType": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Tags": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-resource-tags"
+        },
+        "VPCSecurityGroups": {
+          "$ref": "../types.json#/definitions/list<string>"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::RDS::DBInstance"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

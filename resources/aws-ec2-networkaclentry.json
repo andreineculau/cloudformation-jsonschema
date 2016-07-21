@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::EC2::NetworkAclEntry",
+  "description": "Cloudformation template resource (AWS::EC2::NetworkAclEntry)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "CidrBlock": {
+          "$ref": "../types.json#/definitions/string"
+        },
+
+        "Egress": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "Icmp": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-ec2-icmp"
+        },
+        "NetworkAclId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "PortRange": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-ec2-port-range"
+        },
+        "Protocol": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "RuleAction": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "RuleNumber": {
+          "$ref": "../types.json#/definitions/integer"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::EC2::NetworkAclEntry"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

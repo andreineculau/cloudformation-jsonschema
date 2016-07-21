@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::ApiGateway::Method",
+  "description": "Cloudformation template resource (AWS::ApiGateway::Method)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "ApiKeyRequired": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+
+        "AuthorizationType": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "AuthorizerId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "HttpMethod": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Integration": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-apitgateway-method-integration"
+        },
+        "MethodResponses": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-apitgateway-method-methodresponse"
+        },
+        "RequestModels": {
+          "$ref": "../types.json#/definitions/key-value-pairs"
+        },
+        "RequestParameters": {
+          "$ref": "../types.json#/definitions/key-value-pairs"
+        },
+        "ResourceId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "RestApiId": {
+          "$ref": "../types.json#/definitions/string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::ApiGateway::Method"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

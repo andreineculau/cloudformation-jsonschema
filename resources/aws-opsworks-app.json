@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::OpsWorks::App",
+  "description": "Cloudformation template resource (AWS::OpsWorks::App)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "AppSource": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-opsworks-stack-source"
+        },
+
+        "Attributes": {
+          "$ref": "../types.json#/definitions/key-value-pairs"
+        },
+        "Description": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Domains": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+        "EnableSsl": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "Environment": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-opsworks-app-environment"
+        },
+        "Name": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Shortname": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "SslConfiguration": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-opsworks-app-sslconfiguration"
+        },
+        "StackId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Type": {
+          "$ref": "../types.json#/definitions/string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::OpsWorks::App"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::CloudFormation::Authentication",
+  "description": "Cloudformation template resource (AWS::CloudFormation::Authentication)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "accessKeyId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+
+        "buckets": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+        "password": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "secretKey": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "type": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "uris": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+        "username": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "roleName": {
+          "$ref": "../types.json#/definitions/string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::CloudFormation::Authentication"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

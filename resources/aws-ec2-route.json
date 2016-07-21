@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::EC2::Route",
+  "description": "Cloudformation template resource (AWS::EC2::Route)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "DestinationCidrBlock": {
+          "$ref": "../types.json#/definitions/string"
+        },
+
+        "GatewayId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "InstanceId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "NatGatewayId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "NetworkInterfaceId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "RouteTableId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "VpcPeeringConnectionId": {
+          "$ref": "../types.json#/definitions/string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::EC2::Route"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::ElastiCache::ReplicationGroup",
+  "description": "Cloudformation template resource (AWS::ElastiCache::ReplicationGroup)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "AutomaticFailoverEnabled": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+
+        "AutoMinorVersionUpgrade": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "CacheNodeType": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "CacheParameterGroupName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "CacheSecurityGroupNames": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+        "CacheSubnetGroupName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Engine": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "EngineVersion": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "NotificationTopicArn": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "NumCacheClusters": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "Port": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "PreferredCacheClusterAZs": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+        "PreferredMaintenanceWindow": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "ReplicationGroupDescription": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "SecurityGroupIds": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+        "SnapshotArns": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+        "SnapshotRetentionLimit": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "SnapshotWindow": {
+          "$ref": "../types.json#/definitions/string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::ElastiCache::ReplicationGroup"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

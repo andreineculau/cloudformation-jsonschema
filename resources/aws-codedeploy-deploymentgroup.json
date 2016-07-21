@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::CodeDeploy::DeploymentGroup",
+  "description": "Cloudformation template resource (AWS::CodeDeploy::DeploymentGroup)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "ApplicationName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+
+        "AutoScalingGroups": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+        "Deployment": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-codedeploy-deploymentgroup-deployment"
+        },
+        "DeploymentConfigName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "DeploymentGroupName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Ec2TagFilters": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-codedeploy-deploymentgroup-ec2tagfilters"
+        },
+        "OnPremisesInstanceTagFilters": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-codedeploy-deploymentgroup-onpremisesinstancetagfilters"
+        },
+        "ServiceRoleArn": {
+          "$ref": "../types.json#/definitions/string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::CodeDeploy::DeploymentGroup"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

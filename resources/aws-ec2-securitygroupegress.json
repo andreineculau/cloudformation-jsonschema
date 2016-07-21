@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::EC2::SecurityGroupEgress",
+  "description": "Cloudformation template resource (AWS::EC2::SecurityGroupEgress)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "CidrIp": {
+          "$ref": "../types.json#/definitions/string"
+        },
+
+        "DestinationSecurityGroupId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "FromPort": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "GroupId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "IpProtocol": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "ToPort": {
+          "$ref": "../types.json#/definitions/integer"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::EC2::SecurityGroupEgress"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

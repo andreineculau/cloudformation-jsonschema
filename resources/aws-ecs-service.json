@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::ECS::Service",
+  "description": "Cloudformation template resource (AWS::ECS::Service)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "Cluster": {
+          "$ref": "../types.json#/definitions/string"
+        },
+
+        "DeploymentConfiguration": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-ecs-service-deploymentconfiguration"
+        },
+        "DesiredCount": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "LoadBalancers": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-ecs-service-loadbalancers"
+        },
+        "Role": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "TaskDefinition": {
+          "$ref": "../types.json#/definitions/string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::ECS::Service"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

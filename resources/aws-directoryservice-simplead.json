@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::DirectoryService::SimpleAD",
+  "description": "Cloudformation template resource (AWS::DirectoryService::SimpleAD)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "CreateAlias": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+
+        "Description": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "EnableSso": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "Name": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Password": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "ShortName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Size": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "VpcSettings": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-directoryservice-simplead-vpcsettings"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::DirectoryService::SimpleAD"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

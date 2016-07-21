@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::RDS::DBSecurityGroupIngress",
+  "description": "Cloudformation template resource (AWS::RDS::DBSecurityGroupIngress)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "CIDRIP": {
+          "$ref": "../types.json#/definitions/string"
+        },
+
+        "DBSecurityGroupName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "EC2SecurityGroupId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "EC2SecurityGroupName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "EC2SecurityGroupOwnerId": {
+          "$ref": "../types.json#/definitions/string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::RDS::DBSecurityGroupIngress"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

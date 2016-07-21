@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::SQS::Queue",
+  "description": "Cloudformation template resource (AWS::SQS::Queue)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "DelaySeconds": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+
+        "MaximumMessageSize": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "MessageRetentionPeriod": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "QueueName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "ReceiveMessageWaitTimeSeconds": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "RedrivePolicy": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-sqs-queues-redrivepolicy"
+        },
+        "VisibilityTimeout": {
+          "$ref": "../types.json#/definitions/integer"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::SQS::Queue"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type"
+  ],
+  "additionalProperties": false
+}

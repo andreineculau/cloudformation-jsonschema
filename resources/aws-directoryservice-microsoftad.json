@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::DirectoryService::MicrosoftAD",
+  "description": "Cloudformation template resource (AWS::DirectoryService::MicrosoftAD)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "CreateAlias": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+
+        "EnableSso": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "Name": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Password": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "ShortName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "VpcSettings": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-directoryservice-microsoftad-vpcsettings"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::DirectoryService::MicrosoftAD"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

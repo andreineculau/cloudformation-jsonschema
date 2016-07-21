@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::ElasticBeanstalk::ConfigurationTemplate",
+  "description": "Cloudformation template resource (AWS::ElasticBeanstalk::ConfigurationTemplate)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "ApplicationName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+
+        "Description": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "EnvironmentId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "OptionSettings": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-beanstalk-option-settings"
+        },
+        "SolutionStackName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "SourceConfiguration": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-beanstalk-configurationtemplate-sourceconfiguration"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::ElasticBeanstalk::ConfigurationTemplate"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,95 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::RDS::DBCluster",
+  "description": "Cloudformation template resource (AWS::RDS::DBCluster)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "AvailabilityZones": {
+          "$ref": "../types.json#/definitions/string"
+        },
+
+        "BackupRetentionPeriod": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "DatabaseName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "DBClusterParameterGroupName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "DBSubnetGroupName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Engine": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "EngineVersion": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "KmsKeyId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "MasterUsername": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "MasterUserPassword": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Port": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "PreferredBackupWindow": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "PreferredMaintenanceWindow": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "SnapshotIdentifier": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "StorageEncrypted": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "Tags": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-resource-tags"
+        },
+        "VpcSecurityGroupIds": {
+          "$ref": "../types.json#/definitions/list<string>"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::RDS::DBCluster"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

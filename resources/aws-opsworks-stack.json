@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::OpsWorks::Stack",
+  "description": "Cloudformation template resource (AWS::OpsWorks::Stack)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "AgentVersion": {
+          "$ref": "../types.json#/definitions/string"
+        },
+
+        "Attributes": {
+          "$ref": "../types.json#/definitions/key-value-pairs"
+        },
+        "ChefConfiguration": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-opsworks-stack-chefconfiguration"
+        },
+        "ConfigurationManager": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-opsworks-stack-stackconfigmanager"
+        },
+        "CustomCookbooksSource": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-opsworks-stack-source"
+        },
+        "CustomJson": {
+          "type": "object"
+        },
+        "DefaultAvailabilityZone": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "DefaultInstanceProfileArn": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "DefaultOs": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "DefaultRootDeviceType": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "DefaultSshKeyName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "DefaultSubnetId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "HostnameTheme": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Name": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "ServiceRoleArn": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "UseCustomCookbooks": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "UseOpsworksSecurityGroups": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "VpcId": {
+          "$ref": "../types.json#/definitions/string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::OpsWorks::Stack"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

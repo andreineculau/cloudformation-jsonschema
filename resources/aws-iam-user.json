@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::IAM::User",
+  "description": "Cloudformation template resource (AWS::IAM::User)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "Groups": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+
+        "LoginProfile": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-iam-user-loginprofile"
+        },
+        "ManagedPolicyArns": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+        "Path": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Policies": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-iam-policy"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::IAM::User"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::Lambda::Function",
+  "description": "Cloudformation template resource (AWS::Lambda::Function)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "Code": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-lambda-function-code"
+        },
+
+        "Description": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "FunctionName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Handler": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "MemorySize": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "Role": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Runtime": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Timeout": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "VpcConfig": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-lambda-function-vpcconfig"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::Lambda::Function"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

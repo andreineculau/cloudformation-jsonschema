@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::AutoScaling::AutoScalingGroup",
+  "description": "Cloudformation template resource (AWS::AutoScaling::AutoScalingGroup)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "AvailabilityZones": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+
+        "Cooldown": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "DesiredCapacity": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "HealthCheckGracePeriod": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "HealthCheckType": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "InstanceId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "LaunchConfigurationName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "LoadBalancerNames": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+        "MaxSize": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "MetricsCollection": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-as-metricscollection"
+        },
+        "MinSize": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "NotificationConfigurations": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-as-notificationconfigurations"
+        },
+        "PlacementGroup": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Tags": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-as-tags"
+        },
+        "TerminationPolicies": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+        "VPCZoneIdentifier": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+        "NotificationConfiguration": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-as-notificationconfigurations"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::AutoScaling::AutoScalingGroup"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    },
+    "CreationPolicy": {
+      "$ref": "../resource-common.json#/definitions/CreationPolicy"
+    },
+    "UpdatePolicy": {
+      "$ref": "../resource-common.json#/definitions/UpdatePolicy"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

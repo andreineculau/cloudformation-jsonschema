@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::ElasticBeanstalk::Environment",
+  "description": "Cloudformation template resource (AWS::ElasticBeanstalk::Environment)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "ApplicationName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+
+        "CNAMEPrefix": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Description": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "EnvironmentName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "OptionSettings": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-beanstalk-option-settings"
+        },
+        "SolutionStackName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Tags": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-resource-tags"
+        },
+        "TemplateName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Tier": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-beanstalk-environment-tier"
+        },
+        "VersionLabel": {
+          "$ref": "../types.json#/definitions/string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::ElasticBeanstalk::Environment"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

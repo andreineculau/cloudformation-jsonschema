@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::RDS::OptionGroup",
+  "description": "Cloudformation template resource (AWS::RDS::OptionGroup)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "EngineName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+
+        "MajorEngineVersion": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "OptionGroupDescription": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "OptionConfigurations": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-rds-optiongroup-optionconfigurations"
+        },
+        "Tags": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-resource-tags"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::RDS::OptionGroup"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

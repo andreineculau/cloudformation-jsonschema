@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::Route53::HostedZone",
+  "description": "Cloudformation template resource (AWS::Route53::HostedZone)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "HostedZoneConfig": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-route53-hostedzone-hostedzoneconfig"
+        },
+
+        "HostedZoneTags": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-route53-hostedzone-hostedzonetags"
+        },
+        "Name": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "VPCs": {
+          "$ref": "../resource-property-types.json#/definitions/aws-resource-route53-hostedzone-hostedzonevpcs"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::Route53::HostedZone"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

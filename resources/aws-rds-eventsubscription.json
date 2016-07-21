@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::RDS::EventSubscription",
+  "description": "Cloudformation template resource (AWS::RDS::EventSubscription)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "Enabled": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+
+        "EventCategories": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+        "SnsTopicArn": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "SourceIds": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+        "SourceType": {
+          "$ref": "../types.json#/definitions/string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::RDS::EventSubscription"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::EC2::Volume",
+  "description": "Cloudformation template resource (AWS::EC2::Volume)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "AutoEnableIO": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+
+        "AvailabilityZone": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Encrypted": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "Iops": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "KmsKeyId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Size": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "SnapshotId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Tags": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-resource-tags"
+        },
+        "VolumeType": {
+          "$ref": "../types.json#/definitions/string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::EC2::Volume"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,119 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::Redshift::Cluster",
+  "description": "Cloudformation template resource (AWS::Redshift::Cluster)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "AllowVersionUpgrade": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+
+        "AutomatedSnapshotRetentionPeriod": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "AvailabilityZone": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "ClusterParameterGroupName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "ClusterSecurityGroups": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+        "ClusterSubnetGroupName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "ClusterType": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "ClusterVersion": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "DBName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "ElasticIp": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Encrypted": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "HsmClientCertificateIdentifier": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "HsmConfigurationIdentifier": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "KmsKeyId": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "MasterUsername": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "MasterUserPassword": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "NodeType": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "NumberOfNodes": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "OwnerAccount": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Port": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "PreferredMaintenanceWindow": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "PubliclyAccessible": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+        "SnapshotClusterIdentifier": {
+          "description": "<p>The name of the cluster the source snapshot was created from.</p><p><span class=\"emphasis\"><em>Required</em></span>: No</p><p><span class=\"emphasis\"><em>Required</em></span>: Conditional. This property is required if your IAM policy includes\n                  a restriction on the cluster name, where the resource element specifies anything\n                  other than the wildcard character (<code class=\"code\">*</code>) for the cluster name.</p><p><span class=\"emphasis\"><em>Update requires</em></span>: <a class=\"link\" href=\"http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement\">Replacement</a></p>"
+        },
+        "SnapshotIdentifier": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "VpcSecurityGroupIds": {
+          "$ref": "../types.json#/definitions/list<string>"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::Redshift::Cluster"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

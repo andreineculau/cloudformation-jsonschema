@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::AutoScaling::ScalingPolicy",
+  "description": "Cloudformation template resource (AWS::AutoScaling::ScalingPolicy)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "AdjustmentType": {
+          "$ref": "../types.json#/definitions/string"
+        },
+
+        "AutoScalingGroupName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Cooldown": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "EstimatedInstanceWarmup": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "MetricAggregationType": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "MinAdjustmentMagnitude": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "PolicyType": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "ScalingAdjustment": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "StepAdjustments": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-autoscaling-scalingpolicy-stepadjustments"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::AutoScaling::ScalingPolicy"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::WAF::Rule",
+  "description": "Cloudformation template resource (AWS::WAF::Rule)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "MetricName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+
+        "Name": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Predicates": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-waf-rule-predicates"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::WAF::Rule"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

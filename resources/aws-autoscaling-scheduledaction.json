@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::AutoScaling::ScheduledAction",
+  "description": "Cloudformation template resource (AWS::AutoScaling::ScheduledAction)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "AutoScalingGroupName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+
+        "DesiredCapacity": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "EndTime": {
+          "description": "<p>The time in UTC for this schedule to end. For example,\n                     <code class=\"code\">2010-06-01T00:00:00Z</code>.</p><p><span class=\"emphasis\"><em>Required</em></span>: No</p><p><span class=\"emphasis\"><em>Type</em></span>: Time stamp</p><p><span class=\"emphasis\"><em>Update requires</em></span>: <a class=\"link\" href=\"http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt\">No interruption</a></p>"
+        },
+        "MaxSize": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "MinSize": {
+          "$ref": "../types.json#/definitions/integer"
+        },
+        "Recurrence": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "StartTime": {
+          "description": "<p>The time in UTC for this schedule to start. For example,\n                     <code class=\"code\">2010-06-01T00:00:00Z</code>.</p><p><span class=\"emphasis\"><em>Required</em></span>: No</p><p><span class=\"emphasis\"><em>Type</em></span>: Time stamp</p><p><span class=\"emphasis\"><em>Update requires</em></span>: <a class=\"link\" href=\"http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt\">No interruption</a></p>"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::AutoScaling::ScheduledAction"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

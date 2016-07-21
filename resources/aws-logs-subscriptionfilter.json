@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::Logs::SubscriptionFilter",
+  "description": "Cloudformation template resource (AWS::Logs::SubscriptionFilter)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "DestinationArn": {
+          "$ref": "../types.json#/definitions/string"
+        },
+
+        "FilterPattern": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "LogGroupName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "RoleArn": {
+          "$ref": "../types.json#/definitions/string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::Logs::SubscriptionFilter"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

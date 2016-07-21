@@ -1,0 +1,826 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+
+  "definitions": {
+    "aws-properties-apitgateway-apikey-stagekey": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-apikey-stagekey.html",
+      "title": "Amazon API Gateway ApiKey StageKey"
+    },
+    "aws-properties-apitgateway-deployment-stagedescription": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-deployment-stagedescription.html",
+      "title": "Amazon API Gateway Deployment StageDescription"
+    },
+    "aws-properties-apitgateway-deployment-stagedescription-methodsetting": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-deployment-stagedescription-methodsetting.html",
+      "title": "Amazon API Gateway Deployment StageDescription MethodSetting"
+    },
+    "aws-properties-apitgateway-method-integration": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration.html",
+      "title": "Amazon API Gateway Method Integration"
+    },
+    "aws-properties-apitgateway-method-integration-integrationresponse": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-integration-integrationresponse.html",
+      "title": "Amazon API Gateway Method Integration IntegrationResponse"
+    },
+    "aws-properties-apitgateway-method-methodresponse": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-method-methodresponse.html",
+      "title": "Amazon API Gateway Method MethodResponse"
+    },
+    "aws-properties-apitgateway-restapi-bodys3location": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-restapi-bodys3location.html",
+      "title": "Amazon API Gateway RestApi S3Location"
+    },
+    "aws-properties-apitgateway-stage-methodsetting": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-apitgateway-stage-methodsetting.html",
+      "title": "Amazon API Gateway Stage MethodSetting"
+    },
+    "aws-properties-as-launchconfig-blockdev-mapping": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig-blockdev-mapping.html",
+      "title": "AWS CloudFormation AutoScaling Block Device Mapping Property Type"
+    },
+    "aws-properties-as-launchconfig-blockdev-template": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-launchconfig-blockdev-template.html",
+      "title": "AWS CloudFormation AutoScaling EBS Block Device Property Type"
+    },
+    "aws-properties-as-metricscollection": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-metricscollection.html",
+      "title": "Auto Scaling MetricsCollection"
+    },
+    "aws-properties-as-notificationconfigurations": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-notificationconfigurations.html",
+      "title": "Auto Scaling NotificationConfigurations"
+    },
+    "aws-properties-autoscaling-scalingpolicy-stepadjustments": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-stepadjustments.html",
+      "title": "Auto Scaling ScalingPolicy StepAdjustments"
+    },
+    "aws-properties-as-tags": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-tags.html",
+      "title": "Auto Scaling Tags Property Type"
+    },
+    "aws-properties-stack-parameters": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-stack-parameters.html",
+      "title": "CloudFormation Stack Parameters Property Type"
+    },
+    "aws-properties-cloudformation-interface-label": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudformation-interface-label.html",
+      "title": "AWS CloudFormation Interface Label"
+    },
+    "aws-properties-cloudformation-interface-parametergroup": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudformation-interface-parametergroup.html",
+      "title": "AWS CloudFormation Interface ParameterGroup"
+    },
+    "aws-properties-cloudformation-interface-parameterlabel": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudformation-interface-parameterlabel.html",
+      "title": "AWS CloudFormation Interface ParameterLabel"
+    },
+    "aws-properties-cloudfront-distributionconfig": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distributionconfig.html",
+      "title": "CloudFront DistributionConfig"
+    },
+    "aws-properties-cloudfront-cachebehavior": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-cachebehavior.html",
+      "title": "CloudFront DistributionConfig CacheBehavior"
+    },
+    "aws-properties-cloudfront-distributionconfig-customerrorresponse": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distributionconfig-customerrorresponse.html",
+      "title": "CloudFront DistributionConfig CustomErrorResponse"
+    },
+    "aws-properties-cloudfront-defaultcachebehavior": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-defaultcachebehavior.html",
+      "title": "CloudFront DefaultCacheBehavior"
+    },
+    "aws-properties-cloudfront-logging": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-logging.html",
+      "title": "CloudFront Logging"
+    },
+    "aws-properties-cloudfront-origin": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-origin.html",
+      "title": "CloudFront DistributionConfig Origin"
+    },
+    "aws-properties-cloudfront-customorigin": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-customorigin.html",
+      "title": "CloudFront DistributionConfig Origin CustomOrigin"
+    },
+    "aws-properties-cloudfront-s3origin": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-s3origin.html",
+      "title": "CloudFront DistributionConfig Origin S3Origin"
+    },
+    "aws-properties-cloudfront-distributionconfig-restrictions": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distributionconfig-restrictions.html",
+      "title": "CloudFront DistributionConfiguration Restrictions"
+    },
+    "aws-properties-cloudfront-distributionconfig-restrictions-georestriction": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distributionconfig-restrictions-georestriction.html",
+      "title": "CloudFront DistributionConfig Restrictions GeoRestriction"
+    },
+    "aws-properties-cloudfront-distributionconfig-viewercertificate": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distributionconfig-viewercertificate.html",
+      "title": "CloudFront DistributionConfiguration ViewerCertificate"
+    },
+    "aws-properties-cloudfront-forwardedvalues": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-forwardedvalues.html",
+      "title": "CloudFront ForwardedValues"
+    },
+    "aws-properties-cloudfront-forwardedvalues-cookies": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-forwardedvalues-cookies.html",
+      "title": "CloudFront ForwardedValues Cookies"
+    },
+    "aws-properties-cw-dimension": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cw-dimension.html",
+      "title": "CloudWatch Metric Dimension Property Type"
+    },
+    "aws-properties-events-rule-target": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-events-rule-target.html",
+      "title": "Amazon CloudWatch Events Rule Target"
+    },
+    "aws-properties-logs-metricfilter-metrictransformation": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-logs-metricfilter-metrictransformation.html",
+      "title": "CloudWatch Logs MetricFilter MetricTransformation Property"
+    },
+    "aws-properties-codedeploy-deploymentconfig-minimumhealthyhosts": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentconfig-minimumhealthyhosts.html",
+      "title": "AWS CodeDeploy DeploymentConfig MinimumHealthyHosts"
+    },
+    "aws-properties-codedeploy-deploymentgroup-deployment": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment.html",
+      "title": "AWS CodeDeploy DeploymentGroup Deployment"
+    },
+    "aws-properties-codedeploy-deploymentgroup-deployment-revision": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision.html",
+      "title": "AWS CodeDeploy DeploymentGroup Deployment Revision"
+    },
+    "aws-properties-codedeploy-deploymentgroup-deployment-revision-githublocation": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-githublocation.html",
+      "title": "AWS CodeDeploy DeploymentGroup Deployment Revision GitHubLocation"
+    },
+    "aws-properties-codedeploy-deploymentgroup-deployment-revision-s3location": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deployment-revision-s3location.html",
+      "title": "AWS CodeDeploy DeploymentGroup Deployment Revision S3Location"
+    },
+    "aws-properties-codedeploy-deploymentgroup-ec2tagfilters": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-ec2tagfilters.html",
+      "title": "AWS CodeDeploy DeploymentGroup Ec2TagFilters"
+    },
+    "aws-properties-codedeploy-deploymentgroup-onpremisesinstancetagfilters": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-onpremisesinstancetagfilters.html",
+      "title": "AWS CodeDeploy DeploymentGroup OnPremisesInstanceTagFilters"
+    },
+    "aws-resource-codepipeline-customactiontype-artifactdetails": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype-artifactdetails.html",
+      "title": "AWS CodePipeline CustomActionType ArtifactDetails"
+    },
+    "aws-resource-codepipeline-customactiontype-configurationproperties": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype-configurationproperties.html",
+      "title": "AWS CodePipeline CustomActionType ConfigurationProperties"
+    },
+    "aws-resource-codepipeline-customactiontype-settings": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype-settings.html",
+      "title": "AWS CodePipeline CustomActionType Settings"
+    },
+    "aws-properties-codepipeline-pipeline-artifactstore": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html",
+      "title": "AWS CodePipeline Pipeline ArtifactStore"
+    },
+    "aws-properties-codepipeline-pipeline-artifactstore-encryptionkey": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore-encryptionkey.html",
+      "title": "AWS CodePipeline Pipeline ArtifactStore EncryptionKey"
+    },
+    "aws-properties-codepipeline-pipeline-disableinboundstagetransitions": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-disableinboundstagetransitions.html",
+      "title": "AWS CodePipeline Pipeline DisableInboundStageTransitions"
+    },
+    "aws-properties-codepipeline-pipeline-stages": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages.html",
+      "title": "AWS CodePipeline Pipeline Stages"
+    },
+    "aws-properties-codepipeline-pipeline-stages-actions": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions.html",
+      "title": "AWS CodePipeline Pipeline Stages Actions"
+    },
+    "aws-properties-codepipeline-pipeline-stages-actions-actiontypeid": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-actiontypeid.html",
+      "title": "AWS CodePipeline Pipeline Stages Actions ActionTypeId"
+    },
+    "aws-properties-codepipeline-pipeline-stages-actions-inputartifacts": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-inputartifacts.html",
+      "title": "AWS CodePipeline Pipeline Stages Actions InputArtifacts"
+    },
+    "aws-properties-codepipeline-pipeline-stages-actions-outputartifacts": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-actions-outputartifacts.html",
+      "title": "AWS CodePipeline Pipeline Stages Actions OutputArtifacts"
+    },
+    "aws-properties-codepipeline-pipeline-stages-blockers": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-stages-blockers.html",
+      "title": "AWS CodePipeline Pipeline Stages Blockers"
+    },
+    "aws-properties-config-configrule-scope": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-scope.html",
+      "title": "AWS Config ConfigRule Scope"
+    },
+    "aws-properties-config-configrule-source": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source.html",
+      "title": "AWS Config ConfigRule Source"
+    },
+    "aws-properties-config-configrule-source-sourcedetails": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configrule-source-sourcedetails.html",
+      "title": "AWS Config ConfigRule Source SourceDetails"
+    },
+    "aws-properties-config-configurationrecorder-recordinggroup": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationrecorder-recordinggroup.html",
+      "title": "AWS Config ConfigurationRecorder RecordingGroup"
+    },
+    "aws-properties-config-deliverychannel-configsnapshotdeliveryproperties": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-deliverychannel-configsnapshotdeliveryproperties.html",
+      "title": "AWS Config DeliveryChannel ConfigSnapshotDeliveryProperties"
+    },
+    "aws-properties-datapipeline-pipeline-parameterobjects": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-parameterobjects.html",
+      "title": "AWS Data Pipeline Pipeline ParameterObjects"
+    },
+    "aws-properties-datapipeline-pipeline-parameterobjects-attributes": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-parameterobjects-attributes.html",
+      "title": "AWS Data Pipeline Parameter Objects Attributes"
+    },
+    "aws-properties-datapipeline-pipeline-parametervalues": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-parametervalues.html",
+      "title": "AWS Data Pipeline Pipeline ParameterValues"
+    },
+    "aws-properties-datapipeline-pipeline-pipelineobjects": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-pipelineobjects.html",
+      "title": "AWS Data Pipeline PipelineObjects"
+    },
+    "aws-properties-datapipeline-pipeline-pipelineobjects-fields": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-pipelineobjects-fields.html",
+      "title": "AWS Data Pipeline Data Pipeline Object Fields"
+    },
+    "aws-properties-datapipeline-pipeline-pipelinetags": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-datapipeline-pipeline-pipelinetags.html",
+      "title": "AWS Data Pipeline Pipeline PipelineTags"
+    },
+    "aws-properties-directoryservice-microsoftad-vpcsettings": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-microsoftad-vpcsettings.html",
+      "title": "AWS Directory Service MicrosoftAD VpcSettings"
+    },
+    "aws-properties-directoryservice-simplead-vpcsettings": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-directoryservice-simplead-vpcsettings.html",
+      "title": "AWS Directory Service SimpleAD VpcSettings"
+    },
+    "aws-properties-dynamodb-attributedef": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-attributedef.html",
+      "title": "DynamoDB Attribute Definitions"
+    },
+    "aws-properties-dynamodb-gsi": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-gsi.html",
+      "title": "DynamoDB Global Secondary Indexes"
+    },
+    "aws-properties-dynamodb-keyschema": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-keyschema.html",
+      "title": "DynamoDB Key Schema"
+    },
+    "aws-properties-dynamodb-lsi": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-lsi.html",
+      "title": "DynamoDB Local Secondary Indexes"
+    },
+    "aws-properties-dynamodb-projectionobject": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-projectionobject.html",
+      "title": "DynamoDB Projection Object"
+    },
+    "aws-properties-dynamodb-provisionedthroughput": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-provisionedthroughput.html",
+      "title": "DynamoDB Provisioned Throughput"
+    },
+    "aws-properties-dynamodb-streamspecification": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-streamspecification.html",
+      "title": "DynamoDB Table StreamSpecification"
+    },
+    "aws-properties-ec2-blockdev-mapping": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-mapping.html",
+      "title": "Amazon EC2 Block Device Mapping Property"
+    },
+    "aws-properties-ec2-blockdev-template": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html",
+      "title": "Amazon Elastic Block Store Block Device Property"
+    },
+    "aws-properties-ec2-icmp": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-icmp.html",
+      "title": "EC2 ICMP Property Type"
+    },
+    "aws-properties-ec2-instance-ssmassociations": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations.html",
+      "title": "Amazon EC2 Instance SsmAssociations"
+    },
+    "aws-properties-ec2-instance-ssmassociations-associationparameters": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance-ssmassociations-associationparameters.html",
+      "title": "Amazon EC2 Instance SsmAssociations AssociationParameters"
+    },
+    "aws-properties-ec2-mount-point": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-mount-point.html",
+      "title": "EC2 MountPoint Property Type"
+    },
+    "aws-properties-ec2-network-iface-embedded": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-iface-embedded.html",
+      "title": "EC2 NetworkInterface Embedded Property Type"
+    },
+    "aws-properties-ec2-network-interface-association": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-interface-association.html",
+      "title": "EC2 Network Interface Association"
+    },
+    "aws-properties-ec2-network-interface-attachment": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-interface-attachment.html",
+      "title": "EC2 Network Interface Attachment"
+    },
+    "aws-properties-ec2-network-interface-groupitem": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-interface-groupitem.html",
+      "title": "EC2 Network Interface Group Item"
+    },
+    "aws-properties-ec2-network-interface-privateipspec": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-network-interface-privateipspec.html",
+      "title": "EC2 Network Interface Private IP Specification"
+    },
+    "aws-properties-ec2-port-range": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-port-range.html",
+      "title": "EC2 PortRange Property Type"
+    },
+    "aws-properties-ec2-security-group-rule": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group-rule.html",
+      "title": "EC2 Security Group Rule Property Type"
+    },
+    "aws-properties-ec2-spotfleet-spotfleetrequestconfigdata": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata.html",
+      "title": "Amazon EC2 SpotFleet SpotFleetRequestConfigData"
+    },
+    "aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications.html",
+      "title": "Amazon Elastic Compute Cloud SpotFleet SpotFleetRequestConfigData LaunchSpecifications"
+    },
+    "aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-blockdevicemappings": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-blockdevicemappings.html",
+      "title": "Amazon Elastic Compute Cloud SpotFleet SpotFleetRequestConfigData LaunchSpecifications BlockDeviceMappings"
+    },
+    "aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-blockdevicemappings-ebs": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-blockdevicemappings-ebs.html",
+      "title": "Amazon Elastic Compute Cloud SpotFleet SpotFleetRequestConfigData LaunchSpecifications BlockDeviceMappings Ebs"
+    },
+    "aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-iaminstanceprofile": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-iaminstanceprofile.html",
+      "title": "Amazon Elastic Compute Cloud SpotFleet SpotFleetRequestConfigData LaunchSpecifications IamInstanceProfile"
+    },
+    "aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-monitoring": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-monitoring.html",
+      "title": "Amazon EC2 SpotFleet SpotFleetRequestConfigData LaunchSpecifications Monitoring"
+    },
+    "aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces.html",
+      "title": "Amazon Elastic Compute Cloud SpotFleet SpotFleetRequestConfigData LaunchSpecifications NetworkInterfaces"
+    },
+    "aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces-privateipaddresses": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces-privateipaddresses.html",
+      "title": "Amazon Elastic Compute Cloud SpotFleet SpotFleetRequestConfigData LaunchSpecifications NetworkInterfaces PrivateIpAddresses"
+    },
+    "aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-placement": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-placement.html",
+      "title": "Amazon Elastic Compute Cloud SpotFleet SpotFleetRequestConfigData LaunchSpecifications Placement"
+    },
+    "aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-securitygroups": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-securitygroups.html",
+      "title": "Amazon Elastic Compute Cloud SpotFleet SpotFleetRequestConfigData LaunchSpecifications SecurityGroups"
+    },
+    "aws-properties-ecs-service-deploymentconfiguration": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-deploymentconfiguration.html",
+      "title": "Amazon EC2 Container Service Service DeploymentConfiguration"
+    },
+    "aws-properties-ecs-service-loadbalancers": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-loadbalancers.html",
+      "title": "Amazon EC2 Container Service Service LoadBalancers"
+    },
+    "aws-properties-ecs-taskdefinition-containerdefinitions": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions.html",
+      "title": "Amazon EC2 Container Service TaskDefinition ContainerDefinitions"
+    },
+    "aws-properties-ecs-taskdefinition-containerdefinitions-environment": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-environment.html",
+      "title": "Amazon EC2 Container Service TaskDefinition ContainerDefinitions Environment"
+    },
+    "aws-properties-ecs-taskdefinition-containerdefinitions-hostentry": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-hostentry.html",
+      "title": "Amazon EC2 Container Service TaskDefinition ContainerDefinitions HostEntry"
+    },
+    "aws-properties-ecs-taskdefinition-containerdefinitions-logconfiguration": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-logconfiguration.html",
+      "title": "Amazon EC2 Container Service TaskDefinition ContainerDefinitions LogConfiguration"
+    },
+    "aws-properties-ecs-taskdefinition-containerdefinitions-mountpoints": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-mountpoints.html",
+      "title": "Amazon EC2 Container Service TaskDefinition ContainerDefinitions MountPoints"
+    },
+    "aws-properties-ecs-taskdefinition-containerdefinitions-portmappings": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-portmappings.html",
+      "title": "Amazon EC2 Container Service TaskDefinition ContainerDefinitions PortMappings"
+    },
+    "aws-properties-ecs-taskdefinition-containerdefinitions-ulimit": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-ulimit.html",
+      "title": "Amazon EC2 Container Service TaskDefinition ContainerDefinitions Ulimit"
+    },
+    "aws-properties-ecs-taskdefinition-containerdefinitions-volumesfrom": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-volumesfrom.html",
+      "title": "Amazon EC2 Container Service TaskDefinition ContainerDefinitions VolumesFrom"
+    },
+    "aws-properties-ecs-taskdefinition-volumes": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-volumes.html",
+      "title": "Amazon EC2 Container Service TaskDefinition Volumes"
+    },
+    "aws-properties-ecs-taskdefinition-volumes-host": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-volumes-host.html",
+      "title": "Amazon EC2 Container Service TaskDefinition Volumes Host"
+    },
+    "aws-properties-efs-filesystem-filesystemtags": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-efs-filesystem-filesystemtags.html",
+      "title": "Amazon Elastic File System FileSystem FileSystemTags"
+    },
+    "aws-properties-beanstalk-environment-tier": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment-tier.html",
+      "title": "Elastic Beanstalk Environment Tier Property Type"
+    },
+    "aws-properties-beanstalk-option-settings": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-option-settings.html",
+      "title": "Elastic Beanstalk OptionSettings Property Type"
+    },
+    "aws-properties-beanstalk-sourcebundle": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-sourcebundle.html",
+      "title": "Elastic Beanstalk SourceBundle Property Type"
+    },
+    "aws-properties-beanstalk-configurationtemplate-sourceconfiguration": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-configurationtemplate-sourceconfiguration.html",
+      "title": "Elastic Beanstalk SourceConfiguration Property Type"
+    },
+    "aws-properties-ec2-elb-accessloggingpolicy": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-accessloggingpolicy.html",
+      "title": "Elastic Load Balancing AccessLoggingPolicy"
+    },
+    "aws-properties-ec2-elb-AppCookieStickinessPolicy": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-AppCookieStickinessPolicy.html",
+      "title": "ElasticLoadBalancing AppCookieStickinessPolicy Type"
+    },
+    "aws-properties-ec2-elb-connectiondrainingpolicy": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-connectiondrainingpolicy.html",
+      "title": "Elastic Load Balancing ConnectionDrainingPolicy"
+    },
+    "aws-properties-ec2-elb-connectionsettings": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-connectionsettings.html",
+      "title": "Elastic Load Balancing ConnectionSettings"
+    },
+    "aws-properties-ec2-elb-health-check": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-health-check.html",
+      "title": "ElasticLoadBalancing HealthCheck Type"
+    },
+    "aws-properties-ec2-elb-LBCookieStickinessPolicy": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-LBCookieStickinessPolicy.html",
+      "title": "ElasticLoadBalancing LBCookieStickinessPolicy Type"
+    },
+    "aws-properties-ec2-elb-listener": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-listener.html",
+      "title": "ElasticLoadBalancing Listener Property Type"
+    },
+    "aws-properties-ec2-elb-policy": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-elb-policy.html",
+      "title": "ElasticLoadBalancing Policy Type"
+    },
+    "aws-properties-elasticsearch-domain-ebsoptions": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html",
+      "title": "Amazon Elasticsearch Service Domain EBSOptions"
+    },
+    "aws-properties-elasticsearch-domain-elasticsearchclusterconfig": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-elasticsearchclusterconfig.html",
+      "title": "Amazon Elasticsearch Service Domain ElasticsearchClusterConfig"
+    },
+    "aws-properties-elasticsearch-domain-snapshotoptions": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-snapshotoptions.html",
+      "title": "Amazon Elasticsearch Service Domain SnapshotOptions"
+    },
+    "aws-properties-emr-cluster-application": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-cluster-application.html",
+      "title": "Amazon Elastic MapReduce Cluster Application"
+    },
+    "aws-properties-emr-cluster-bootstrapactionconfig": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-cluster-bootstrapactionconfig.html",
+      "title": "Amazon Elastic MapReduce Cluster BootstrapActionConfig"
+    },
+    "aws-properties-emr-cluster-bootstrapactionconfig-scriptbootstrapactionconfig": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-cluster-bootstrapactionconfig-scriptbootstrapactionconfig.html",
+      "title": "Amazon Elastic MapReduce Cluster BootstrapActionConfig ScriptBootstrapActionConfig"
+    },
+    "aws-properties-emr-cluster-configuration": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-cluster-configuration.html",
+      "title": "Amazon Elastic MapReduce Cluster Configuration"
+    },
+    "aws-properties-emr-cluster-jobflowinstancesconfig": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-cluster-jobflowinstancesconfig.html",
+      "title": "Amazon Elastic MapReduce Cluster JobFlowInstancesConfig"
+    },
+    "aws-properties-emr-cluster-jobflowinstancesconfig-instancegroupconfig": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-cluster-jobflowinstancesconfig-instancegroupconfig.html",
+      "title": "Amazon Elastic MapReduce Cluster JobFlowInstancesConfig InstanceGroupConfig"
+    },
+    "aws-properties-emr-cluster-jobflowinstancesconfig-placementtype": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-cluster-jobflowinstancesconfig-placementtype.html",
+      "title": "Amazon Elastic MapReduce Cluster JobFlowInstancesConfig PlacementType"
+    },
+    "aws-properties-emr-ebsconfiguration": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration.html",
+      "title": "Amazon Elastic MapReduce EbsConfiguration"
+    },
+    "aws-properties-emr-ebsconfiguration-ebsblockdeviceconfig": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration-ebsblockdeviceconfig.html",
+      "title": "Amazon Elastic MapReduce EbsConfiguration EbsBlockDeviceConfigs"
+    },
+    "aws-properties-emr-ebsconfiguration-ebsblockdeviceconfig-volumespecification": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration-ebsblockdeviceconfig-volumespecification.html",
+      "title": "Amazon Elastic MapReduce EbsConfiguration EbsBlockDeviceConfig VolumeSpecification"
+    },
+    "aws-properties-emr-step-hadoopjarstepconfig": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-step-hadoopjarstepconfig.html",
+      "title": "Amazon Elastic MapReduce Step HadoopJarStepConfig"
+    },
+    "aws-properties-emr-step-hadoopjarstepconfig-keyvalue": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-step-hadoopjarstepconfig-keyvalue.html",
+      "title": "Amazon Elastic MapReduce Step HadoopJarStepConfig KeyValue"
+    },
+    "aws-properties-gamelift-alias-routingstrategy": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-alias-routingstrategy.html",
+      "title": "Amazon GameLift Alias RoutingStrategy"
+    },
+    "aws-properties-gamelift-build-storagelocation": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-build-storagelocation.html",
+      "title": "Amazon GameLift Build StorageLocation"
+    },
+    "aws-properties-gamelift-fleet-ec2inboundpermission": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-gamelift-fleet-ec2inboundpermission.html",
+      "title": "Amazon GameLift Fleet EC2InboundPermission"
+    },
+    "aws-properties-iam-policy": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-policy.html",
+      "title": "IAM Policies"
+    },
+    "aws-properties-iam-user-loginprofile": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user-loginprofile.html",
+      "title": "IAM User LoginProfile"
+    },
+    "aws-properties-lambda-function-code": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-code.html",
+      "title": "AWS Lambda Function Code"
+    },
+    "aws-properties-lambda-function-vpcconfig": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-function-vpcconfig.html",
+      "title": "AWS Lambda Function VPCConfig"
+    },
+    "aws-properties-name": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-name.html",
+      "title": "Name Type"
+    },
+    "aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling-autoscalingthresholds.html",
+      "title": "AWS OpsWorks AutoScalingThresholds Type"
+    },
+    "aws-properties-opsworks-stack-chefconfiguration": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-chefconfiguration.html",
+      "title": "AWS OpsWorks ChefConfiguration Type"
+    },
+    "aws-properties-opsworks-layer-lifecycleeventconfiguration": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration.html",
+      "title": "AWS OpsWorks Layer LifeCycleConfiguration"
+    },
+    "aws-properties-opsworks-layer-lifecycleeventconfiguration-shutdowneventconfiguration": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration-shutdowneventconfiguration.html",
+      "title": "AWS OpsWorks Layer LifeCycleConfiguration ShutdownEventConfiguration"
+    },
+    "aws-properties-opsworks-layer-loadbasedautoscaling": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-loadbasedautoscaling.html",
+      "title": "AWS OpsWorks LoadBasedAutoScaling Type"
+    },
+    "aws-properties-opsworks-layer-recipes": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-recipes.html",
+      "title": "AWS OpsWorks Recipes Type"
+    },
+    "aws-properties-opsworks-stack-source": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-source.html",
+      "title": "AWS OpsWorks Source Type"
+    },
+    "aws-properties-opsworks-app-environment": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-environment.html",
+      "title": "AWS OpsWorks App Environment"
+    },
+    "aws-properties-opsworks-app-sslconfiguration": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html",
+      "title": "AWS OpsWorks SslConfiguration Type"
+    },
+    "aws-properties-opsworks-stack-stackconfigmanager": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-stack-stackconfigmanager.html",
+      "title": "AWS OpsWorks StackConfigurationManager Type"
+    },
+    "aws-properties-opsworks-instance-timebasedautoscaling": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-instance-timebasedautoscaling.html",
+      "title": "AWS OpsWorks TimeBasedAutoScaling Type"
+    },
+    "aws-properties-opsworks-layer-volumeconfig": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-volumeconfig.html",
+      "title": "AWS OpsWorks VolumeConfiguration Type"
+    },
+    "aws-property-redshift-clusterparametergroup-parameter": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-property-redshift-clusterparametergroup-parameter.html",
+      "title": "Amazon Redshift Parameter Type"
+    },
+    "aws-properties-resource-tags": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html",
+      "title": "AWS CloudFormation Resource Tags Type"
+    },
+    "aws-properties-rds-optiongroup-optionconfigurations": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html",
+      "title": "Amazon RDS OptionGroup OptionConfigurations"
+    },
+    "aws-properties-rds-optiongroup-optionconfigurations-optionsettings": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations-optionsettings.html",
+      "title": "Amazon RDS OptionGroup OptionConfigurations OptionSettings"
+    },
+    "aws-properties-rds-security-group-rule": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-security-group-rule.html",
+      "title": "Amazon RDS Security Group Rule"
+    },
+    "aws-properties-route53-aliastarget": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-aliastarget.html",
+      "title": "Route 53 AliasTarget Property"
+    },
+    "aws-properties-route53-recordset-geolocation": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-recordset-geolocation.html",
+      "title": "Amazon Route 53 Record Set GeoLocation Property"
+    },
+    "aws-properties-route53-healthcheck-healthcheckconfig": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthcheckconfig.html",
+      "title": "Amazon Route 53 HealthCheckConfig"
+    },
+    "aws-properties-route53-healthcheck-healthchecktags": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-healthcheck-healthchecktags.html",
+      "title": "Amazon Route 53 HealthCheckTags"
+    },
+    "aws-properties-route53-hostedzone-hostedzoneconfig": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-hostedzone-hostedzoneconfig.html",
+      "title": "Amazon Route 53 HostedZoneConfig Property"
+    },
+    "aws-properties-route53-hostedzone-hostedzonetags": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-route53-hostedzone-hostedzonetags.html",
+      "title": "Amazon Route 53 HostedZoneTags"
+    },
+    "aws-resource-route53-hostedzone-hostedzonevpcs": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-route53-hostedzone-hostedzonevpcs.html",
+      "title": "Amazon Route 53 HostedZoneVPCs"
+    },
+    "aws-properties-s3-bucket-cors": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors.html",
+      "title": "Amazon S3 Cors Configuration"
+    },
+    "aws-properties-s3-bucket-cors-corsrule": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-cors-corsrule.html",
+      "title": "Amazon S3 Cors Configuration Rule"
+    },
+    "aws-properties-s3-bucket-lifecycleconfig": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig.html",
+      "title": "Amazon S3 Lifecycle Configuration"
+    },
+    "aws-properties-s3-bucket-lifecycleconfig-rule": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule.html",
+      "title": "Amazon S3 Lifecycle Rule"
+    },
+    "aws-properties-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-noncurrentversiontransition.html",
+      "title": "Amazon S3 Lifecycle Rule NoncurrentVersionTransition"
+    },
+    "aws-properties-s3-bucket-lifecycleconfig-rule-transition": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-lifecycleconfig-rule-transition.html",
+      "title": "Amazon S3 Lifecycle Rule Transition"
+    },
+    "aws-properties-s3-bucket-loggingconfig": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-loggingconfig.html",
+      "title": "Amazon S3 Logging Configuration"
+    },
+    "aws-properties-s3-bucket-notificationconfig": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig.html",
+      "title": "Amazon S3 NotificationConfiguration"
+    },
+    "aws-properties-s3-bucket-notificationconfiguration-config-filter": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfiguration-config-filter.html",
+      "title": "Amazon S3 NotificationConfiguration Config Filter"
+    },
+    "aws-properties-s3-bucket-notificationconfiguration-config-filter-s3key": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfiguration-config-filter-s3key.html",
+      "title": "Amazon S3 NotificationConfiguration Config Filter S3Key"
+    },
+    "aws-properties-s3-bucket-notificationconfiguration-config-filter-s3key-rules": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfiguration-config-filter-s3key-rules.html",
+      "title": "Amazon S3 NotificationConfiguration Config Filter S3Key Rules"
+    },
+    "aws-properties-s3-bucket-notificationconfig-lambdaconfig": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-lambdaconfig.html",
+      "title": "Amazon Simple Storage Service NotificationConfiguration LambdaConfigurations"
+    },
+    "aws-properties-s3-bucket-notificationconfig-queueconfig": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-queueconfig.html",
+      "title": "Amazon Simple Storage Service NotificationConfiguration QueueConfigurations"
+    },
+    "aws-properties-s3-bucket-notificationconfig-topicconfig": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-notificationconfig-topicconfig.html",
+      "title": "Amazon S3 NotificationConfiguration TopicConfigurations"
+    },
+    "aws-properties-s3-bucket-replicationconfiguration": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration.html",
+      "title": "Amazon S3 ReplicationConfiguration"
+    },
+    "aws-properties-s3-bucket-replicationconfiguration-rules": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules.html",
+      "title": "Amazon S3 ReplicationConfiguration Rules"
+    },
+    "aws-properties-s3-bucket-replicationconfiguration-rules-destination": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-replicationconfiguration-rules-destination.html",
+      "title": "Amazon S3 ReplicationConfiguration Rules Destination"
+    },
+    "aws-properties-s3-bucket-versioningconfig": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket-versioningconfig.html",
+      "title": "Amazon S3 Versioning Configuration"
+    },
+    "aws-properties-s3-websiteconfiguration": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration.html",
+      "title": "Amazon S3 Website Configuration Property"
+    },
+    "aws-properties-s3-websiteconfiguration-redirectallrequeststo": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-redirectallrequeststo.html",
+      "title": "Amazon S3 Website Configuration Redirect All Requests To Property"
+    },
+    "aws-properties-s3-websiteconfiguration-routingrules": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules.html",
+      "title": "Amazon S3 Website Configuration Routing Rules Property"
+    },
+    "aws-properties-s3-websiteconfiguration-routingrules-redirectrule": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-redirectrule.html",
+      "title": "Amazon S3 Website Configuration Routing Rules Redirect Rule Property"
+    },
+    "aws-properties-s3-websiteconfiguration-routingrules-routingrulecondition": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules-routingrulecondition.html",
+      "title": "Amazon S3 Website Configuration Routing Rules Routing Rule Condition Property"
+    },
+    "aws-properties-sns-subscription": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-subscription.html",
+      "title": "Amazon SNS Subscription Property Type"
+    },
+    "aws-properties-sqs-queues-redrivepolicy": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues-redrivepolicy.html",
+      "title": "Amazon SQS RedrivePolicy"
+    },
+    "aws-properties-waf-bytematchset-bytematchtuples": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples.html",
+      "title": "AWS WAF ByteMatchSet ByteMatchTuples"
+    },
+    "aws-properties-waf-bytematchset-bytematchtuples-fieldtomatch": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-bytematchset-bytematchtuples-fieldtomatch.html",
+      "title": "AWS WAF ByteMatchSet ByteMatchTuples FieldToMatch"
+    },
+    "aws-properties-waf-ipset-ipsetdescriptors": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-ipset-ipsetdescriptors.html",
+      "title": "AWS WAF IPSet IPSetDescriptors"
+    },
+    "aws-properties-waf-rule-predicates": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-rule-predicates.html",
+      "title": "AWS WAF Rule Predicates"
+    },
+    "aws-properties-waf-sizeconstraintset-sizeconstraint": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-sizeconstraintset-sizeconstraint.html",
+      "title": "AWS WAF SizeConstraintSet SizeConstraint"
+    },
+    "aws-properties-waf-sizeconstraintset-sizeconstraint-fieldtomatch": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-sizeconstraintset-sizeconstraint-fieldtomatch.html",
+      "title": "AWS WAF SizeConstraintSet SizeConstraint FieldToMatch"
+    },
+    "aws-properties-waf-sqlinjectionmatchset-sqlinjectionmatchtuples": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-sqlinjectionmatchset-sqlinjectionmatchtuples.html",
+      "title": "AWS WAF SqlInjectionMatchSet SqlInjectionMatchTuples"
+    },
+    "aws-properties-waf-sqlinjectionmatchset-sqlinjectionmatchtuples-fieldtomatch": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-sqlinjectionmatchset-sqlinjectionmatchtuples-fieldtomatch.html",
+      "title": "AWS WAF SqlInjectionMatchSet SqlInjectionMatchTuples FieldToMatch"
+    },
+    "aws-properties-waf-xssmatchset-xssmatchtuple": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-xssmatchset-xssmatchtuple.html",
+      "title": "AWS WAF XssMatchSet XssMatchTuple"
+    },
+    "aws-properties-waf-xssmatchset-xssmatchtuple-fieldtomatch": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-xssmatchset-xssmatchtuple-fieldtomatch.html",
+      "title": "AWS WAF XssMatchSet XssMatchTuple FieldToMatch"
+    },
+    "aws-properties-waf-webacl-action": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-webacl-action.html",
+      "title": "AWS WAF WebACL Action"
+    },
+    "aws-properties-waf-webacl-rules": {
+      "description": "http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-webacl-rules.html",
+      "title": "AWS WAF WebACL Rules"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::Redshift::ClusterSecurityGroupIngress",
+  "description": "Cloudformation template resource (AWS::Redshift::ClusterSecurityGroupIngress)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "ClusterSecurityGroupName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+
+        "CIDRIP": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "EC2SecurityGroupName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "EC2SecurityGroupOwnerId": {
+          "$ref": "../types.json#/definitions/string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::Redshift::ClusterSecurityGroupIngress"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::DataPipeline::Pipeline",
+  "description": "Cloudformation template resource (AWS::DataPipeline::Pipeline)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "Activate": {
+          "$ref": "../types.json#/definitions/boolean"
+        },
+
+        "Description": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "Name": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "ParameterObjects": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-datapipeline-pipeline-parameterobjects"
+        },
+        "ParameterValues": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-datapipeline-pipeline-parametervalues"
+        },
+        "PipelineObjects": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-datapipeline-pipeline-pipelineobjects"
+        },
+        "PipelineTags": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-datapipeline-pipeline-pipelinetags"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::DataPipeline::Pipeline"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AWS::Logs::MetricFilter",
+  "description": "Cloudformation template resource (AWS::Logs::MetricFilter)",
+
+  "type": "object",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+        "FilterPattern": {
+          "$ref": "../types.json#/definitions/list<string>"
+        },
+
+        "LogGroupName": {
+          "$ref": "../types.json#/definitions/string"
+        },
+        "MetricTransformations": {
+          "$ref": "../resource-property-types.json#/definitions/aws-properties-logs-metricfilter-metrictransformation"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Type": {
+      "type": "string",
+      "enum": [
+        "AWS::Logs::MetricFilter"
+      ]
+    },
+
+    "DepdensOn": {
+      "$ref": "../resource-common.json#/definitions/DependsOn"
+    },
+
+    "Metadata": {
+      "type": "object"
+    },
+
+    "DeletionPolicy": {
+      "$ref": "../resource-common.json#/definitions/DeletionPolicy"
+    },
+
+    "Condition": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "Type",
+    "Properties"
+  ],
+  "additionalProperties": false
+}
