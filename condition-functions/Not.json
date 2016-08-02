@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Fn::Not": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1,
+      "items": {
+        "oneOf": [{
+          "$ref": "../types.json#/definitions/condition"
+        }, {
+          "$ref": "../types.json#/definitions/condition-function"
+        }]
+      }
+    }
+  },
+  "required": [
+    "Fn::Not"
+  ]
+}

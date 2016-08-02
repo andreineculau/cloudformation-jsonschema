@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Fn::FindInMap": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "oneOf": [{
+          "type": "string"
+        }, {
+          "$ref": "FindInMap.json#"
+        }, {
+          "$ref": "Ref.json#"
+        }]
+      }
+    }
+  },
+  "required": [
+    "Fn::FindInMap"
+  ]
+}

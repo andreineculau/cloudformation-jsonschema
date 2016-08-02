@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Fn::GetAZs": {
+      "oneOf": [{
+        "type": "string"
+      }, {
+        "$ref": "Ref.json#"
+      }]
+    }
+  },
+  "required": [
+    "Fn::GetAZs"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Fn::Equals": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "anyOf": [{
+          "$ref": "../types.json#/definitions/string"
+        }, {
+          "$ref": "../types.json#/definitions/integer"
+        }, {
+          "$ref": "../types.json#/definitions/boolean"
+        }, {
+          "$ref": "../types.json#/definitions/function"
+        }]
+      }
+    }
+  },
+  "required": [
+    "Fn::Equals"
+  ]
+}

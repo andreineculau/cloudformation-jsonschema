@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "Fn::Join": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": [{
+        "type": "string"
+      }, {
+        "oneOf": [{
+          "type": "array",
+          "items": {
+            "$ref": "../types.json#/definitions/primitive"
+          }
+        }, {
+          "$ref": "../types.json#/definitions/function"
+        }]
+      }]
+    }
+  },
+  "required": [
+    "Fn::Join"
+  ]
+}
