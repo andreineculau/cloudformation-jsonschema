@@ -1,6 +1,0 @@
-language: python
-script: PYTHONPATH=. py.test -v tests
-cache: pip
-branches:
-  only:
-    - master
