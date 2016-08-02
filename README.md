@@ -1,70 +1,13 @@
-An attempt to write a json schema (http://json-schema.org) for AWS Cloudformation.
+# CloudFormation JSON Schema
 
-For now, I'm scraping AWS documentation with PyQuery.
+This is a fork of https://github.com/fungusakafungus/cloudformation-jsonschema .
 
-This is not your glossy software.
+While scrapping and automation in general is perfect as a first step,
+manually editing schemata delivers a more readable and more accurate artifact.
 
-### current state
-Many things are validated, but some are not: [resource property types](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-product-property-reference.html) are not validated yet.
-Some resource properties are not parsed properly, so their values are not validated.
+## TODO
+* Fill in and split [resource_property_types.json](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-product-property-reference.html)
 
-Preliminary hosted version of the schema can be found at http://fungusakafungus.github.io/cloudformation-jsonschema/v0.2/schema.json
+## License
 
-The scraping code is in a miserable state.
-
-[![Build Status](https://travis-ci.org/fungusakafungus/cloudformation-jsonschema.svg?branch=master)](https://travis-ci.org/fungusakafungus/cloudformation-jsonschema)
-
-### how to use
-Use `./validate_template.py tests/examples-aws/Rails_Single_Instance.template` to validate cloudformation templates on the command line.
-
-Use `schema.json` programmatically to validate complete Cloudformation templates.
-
-Use `resource.json` to validate a single resource.
-
-The schema consists of multiple files, `schema.json`, `resource.json` and `basic_types.json`. To resolve JSON pointers (`{"$ref": "basic_types.json#/definitions/string"}`) to files on local filesystem, you'll have to use a special resolver. See `val.py` for the example.
-
-Use released hosted version with [python-jsonschema](http://python-jsonschema.readthedocs.io/en/latest/):
-```python
-import jsonschema, requests
-
-schema = requests.get('http://fungusakafungus.github.io/cloudformation-jsonschema/v0.2/schema.json').json()
-jsonschema.validate(
-  {'Resources':{}, 'Outputs':{'o':{'Value':'test'}}},
-  schema
-)
-```
-
-
-### how to contribute
-Submit false positive/negative issues with valid and invalid templates.
-
-#### hack the schema:
-
-Create a virtualenv (`virtualenv venv; pip install -r requirements.txt`)
-
-You can then scrape AWS documentation for cloudformation resource types and save it as jsonschema:
-
-```
-./create_resource_schema.py resource.json
-```
-
-### TODO
- - [x] specialized validator (the one which will tell you that this resource type is not known)
- - [x] tests with valid and invalid fragments for every feature. See `tests/test_stage1_valid.py`
- - [x] define a type for a basic cfn value (string, number or function call(Ref, Join) object)
-  - [x] Fn::Base64
-  - [x] Condition Functions
-  - [x] Fn::FindInMap
-  - [x] Fn::GetAtt
-  - [x] Fn::GetAZs
-  - [x] Fn::Join
-  - [x] Fn::Select
-  - [x] Ref
-  - [x] number
-  - [x] string
- - [x] integrate/link schema.json and resource.json
- - [x] travis/circleci
- - [ ] validate resource property types (listed here: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-product-property-reference.html)
- - [x] validate attributes (`Metadata`, `UpdatePolicy` and others)
- - [ ] make json objects more stable (use more OrderedDict)
- - [x] reject unknown resource properties: https://github.com/fungusakafungus/cloudformation-jsonschema/pull/9
+[MIT](LICENSE)
