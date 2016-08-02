@@ -2,6 +2,6 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Mapping",
   "description": "Cloudformation template mapping",
-  
+
   "type": "object"
 }
