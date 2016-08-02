@@ -15,12 +15,15 @@
         "PolicyDocument": {
           "type": "object"
         },
+
         "PolicyName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Roles": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "Users": {
           "$ref": "../types.json#/definitions/list<string>"
         }

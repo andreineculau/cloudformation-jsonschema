@@ -15,24 +15,31 @@
         "FromPort": {
           "$ref": "../types.json#/definitions/integer"
         },
+
         "GroupId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "GroupName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "IpProtocol": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "SourceSecurityGroupId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "SourceSecurityGroupName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "SourceSecurityGroupOwnerId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "ToPort": {
           "$ref": "../types.json#/definitions/integer"
         }

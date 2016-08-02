@@ -15,12 +15,15 @@
         "LoginProfile": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-iam-user-loginprofile"
         },
+
         "ManagedPolicyArns": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "Path": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Policies": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-iam-policy"
         }

@@ -15,9 +15,11 @@
         "DestinationPolicy": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "RoleArn": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "TargetArn": {
           "$ref": "../types.json#/definitions/string"
         }

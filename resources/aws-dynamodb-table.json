@@ -15,18 +15,23 @@
         "GlobalSecondaryIndexes": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-dynamodb-gsi"
         },
+
         "KeySchema": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-dynamodb-keyschema"
         },
+
         "LocalSecondaryIndexes": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-dynamodb-lsi"
         },
+
         "ProvisionedThroughput": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-dynamodb-provisionedthroughput"
         },
+
         "StreamSpecification": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-dynamodb-streamspecification"
         },
+
         "TableName": {
           "$ref": "../types.json#/definitions/string"
         }

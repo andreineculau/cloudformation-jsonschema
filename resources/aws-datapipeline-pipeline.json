@@ -15,18 +15,23 @@
         "Description": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Name": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "ParameterObjects": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-datapipeline-pipeline-parameterobjects"
         },
+
         "ParameterValues": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-datapipeline-pipeline-parametervalues"
         },
+
         "PipelineObjects": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-datapipeline-pipeline-pipelineobjects"
         },
+
         "PipelineTags": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-datapipeline-pipeline-pipelinetags"
         }

@@ -15,15 +15,19 @@
         "DisableInboundStageTransitions": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-codepipeline-pipeline-disableinboundstagetransitions"
         },
+
         "Name": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "RestartExecutionOnUpdate": {
           "$ref": "../types.json#/definitions/boolean"
         },
+
         "RoleArn": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Stages": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-codepipeline-pipeline-stages"
         }

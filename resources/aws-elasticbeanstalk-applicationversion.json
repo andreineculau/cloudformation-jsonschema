@@ -15,6 +15,7 @@
         "Description": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "SourceBundle": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-beanstalk-sourcebundle"
         }

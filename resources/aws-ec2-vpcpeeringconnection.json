@@ -15,6 +15,7 @@
         "Tags": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-resource-tags"
         },
+
         "VpcId": {
           "$ref": "../types.json#/definitions/string"
         }

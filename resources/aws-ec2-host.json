@@ -15,6 +15,7 @@
         "AvailabilityZone": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "InstanceType": {
           "$ref": "../types.json#/definitions/string"
         }

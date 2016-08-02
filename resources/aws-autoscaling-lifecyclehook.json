@@ -15,18 +15,23 @@
         "DefaultResult": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "HeartbeatTimeout": {
           "$ref": "../types.json#/definitions/integer"
         },
+
         "LifecycleTransition": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "NotificationMetadata": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "NotificationTargetARN": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "RoleARN": {
           "$ref": "../types.json#/definitions/string"
         }

@@ -15,9 +15,11 @@
         "FunctionName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "FunctionVersion": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Name": {
           "$ref": "../types.json#/definitions/string"
         }

@@ -15,15 +15,19 @@
         "Groups": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "Path": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "PolicyDocument": {
           "type": "object"
         },
+
         "Roles": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "Users": {
           "$ref": "../types.json#/definitions/list<string>"
         }

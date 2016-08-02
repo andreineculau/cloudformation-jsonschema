@@ -15,18 +15,23 @@
         "MaximumMessageSize": {
           "$ref": "../types.json#/definitions/integer"
         },
+
         "MessageRetentionPeriod": {
           "$ref": "../types.json#/definitions/integer"
         },
+
         "QueueName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "ReceiveMessageWaitTimeSeconds": {
           "$ref": "../types.json#/definitions/integer"
         },
+
         "RedrivePolicy": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-sqs-queues-redrivepolicy"
         },
+
         "VisibilityTimeout": {
           "$ref": "../types.json#/definitions/integer"
         }

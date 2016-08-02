@@ -15,9 +15,11 @@
         "IpAddress": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Tags": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-resource-tags"
         },
+
         "Type": {
           "$ref": "../types.json#/definitions/string"
         }

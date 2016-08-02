@@ -15,9 +15,11 @@
         "RestApiId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "StageDescription": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-apitgateway-deployment-stagedescription"
         },
+
         "StageName": {
           "$ref": "../types.json#/definitions/string"
         }

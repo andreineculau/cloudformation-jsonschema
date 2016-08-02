@@ -15,6 +15,7 @@
         "StorageLocation": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-gamelift-build-storagelocation"
         },
+
         "Version": {
           "$ref": "../types.json#/definitions/string"
         }

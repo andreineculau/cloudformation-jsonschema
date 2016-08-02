@@ -15,15 +15,19 @@
         "EnableSso": {
           "$ref": "../types.json#/definitions/boolean"
         },
+
         "Name": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Password": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "ShortName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "VpcSettings": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-directoryservice-microsoftad-vpcsettings"
         }

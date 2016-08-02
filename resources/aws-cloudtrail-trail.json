@@ -15,30 +15,39 @@
         "CloudWatchLogsRoleArn": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "EnableLogFileValidation": {
           "$ref": "../types.json#/definitions/boolean"
         },
+
         "IncludeGlobalServiceEvents": {
           "$ref": "../types.json#/definitions/boolean"
         },
+
         "IsLogging": {
           "$ref": "../types.json#/definitions/boolean"
         },
+
         "IsMultiRegionTrail": {
           "$ref": "../types.json#/definitions/boolean"
         },
+
         "KMSKeyId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "S3BucketName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "S3KeyPrefix": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "SnsTopicName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Tags": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-resource-tags"
         }

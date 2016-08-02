@@ -15,12 +15,15 @@
         "CustomerGatewayId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "StaticRoutesOnly": {
           "$ref": "../types.json#/definitions/boolean"
         },
+
         "Tags": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-resource-tags"
         },
+
         "VpnGatewayId": {
           "$ref": "../types.json#/definitions/string"
         }

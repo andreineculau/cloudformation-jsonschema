@@ -15,18 +15,23 @@
         "GatewayId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "InstanceId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "NatGatewayId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "NetworkInterfaceId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "RouteTableId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "VpcPeeringConnectionId": {
           "$ref": "../types.json#/definitions/string"
         }

@@ -15,33 +15,43 @@
         "Applications": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-emr-cluster-application"
         },
+
         "BootstrapActions": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-emr-cluster-bootstrapactionconfig"
         },
+
         "Configurations": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-emr-cluster-configuration"
         },
+
         "Instances": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-emr-cluster-jobflowinstancesconfig"
         },
+
         "JobFlowRole": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "LogUri": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Name": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "ReleaseLabel": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "ServiceRole": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Tags": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-resource-tags"
         },
+
         "VisibleToAllUsers": {
           "$ref": "../types.json#/definitions/boolean"
         }

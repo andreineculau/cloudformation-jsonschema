@@ -15,12 +15,15 @@
         "MajorEngineVersion": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "OptionGroupDescription": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "OptionConfigurations": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-rds-optiongroup-optionconfigurations"
         },
+
         "Tags": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-resource-tags"
         }

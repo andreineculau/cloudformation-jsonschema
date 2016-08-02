@@ -15,9 +15,11 @@
         "CIDRIP": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "EC2SecurityGroupName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "EC2SecurityGroupOwnerId": {
           "$ref": "../types.json#/definitions/string"
         }

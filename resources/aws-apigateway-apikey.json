@@ -8,6 +8,7 @@
     "Properties": {
       "type": "object",
       "properties": {
+
         "Description": {
           "$ref": "../types.json#/definitions/string"
         },
@@ -15,9 +16,11 @@
         "Enabled": {
           "$ref": "../types.json#/definitions/boolean"
         },
+
         "Name": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "StageKeys": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-apitgateway-apikey-stagekey"
         }
@@ -28,6 +31,7 @@
     "Type": {
       "type": "string",
       "enum": [
+
         "AWS::ApiGateway::ApiKey"
       ]
     },

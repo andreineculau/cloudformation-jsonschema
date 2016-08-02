@@ -15,12 +15,15 @@
         "EventCategories": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "SnsTopicArn": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "SourceIds": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "SourceType": {
           "$ref": "../types.json#/definitions/string"
         }

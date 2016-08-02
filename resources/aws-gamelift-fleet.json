@@ -15,30 +15,39 @@
         "Description": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "DesiredEC2Instances": {
           "$ref": "../types.json#/definitions/integer"
         },
+
         "EC2InboundPermissions": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-gamelift-fleet-ec2inboundpermission"
         },
+
         "EC2InstanceType": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "LogPaths": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "MaxSize": {
           "$ref": "../types.json#/definitions/integer"
         },
+
         "MinSize": {
           "$ref": "../types.json#/definitions/integer"
         },
+
         "Name": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "ServerLaunchParameters": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "ServerLaunchPath": {
           "$ref": "../types.json#/definitions/string"
         }

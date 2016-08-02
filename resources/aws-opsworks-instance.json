@@ -15,39 +15,51 @@
         "Architecture": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "AutoScalingType": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "AvailabilityZone": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "EbsOptimized": {
           "$ref": "../types.json#/definitions/boolean"
         },
+
         "InstallUpdatesOnBoot": {
           "$ref": "../types.json#/definitions/boolean"
         },
+
         "InstanceType": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "LayerIds": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "Os": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "RootDeviceType": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "SshKeyName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "StackId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "SubnetId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "TimeBasedAutoScaling": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-opsworks-instance-timebasedautoscaling"
         }

@@ -15,9 +15,11 @@
         "Family": {
           "description": "<p>The database family of this RDS parameter group. For example, <code class=\"code\">\"MySQL5.1\"</code>.</p><p><span class=\"emphasis\"><em>Required</em></span>: Yes</p><p><span class=\"emphasis\"><em>Type:</em></span> String</p><p><span class=\"emphasis\"><em>Update requires</em></span>: Updates are not supported.</p>"
         },
+
         "Parameters": {
           "$ref": "../types.json#/definitions/key-value-pairs"
         },
+
         "Tags": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-resource-tags"
         }

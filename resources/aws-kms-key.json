@@ -15,9 +15,11 @@
         "Enabled": {
           "$ref": "../types.json#/definitions/boolean"
         },
+
         "EnableKeyRotation": {
           "$ref": "../types.json#/definitions/boolean"
         },
+
         "KeyPolicy": {
           "type": "object"
         }

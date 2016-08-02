@@ -15,21 +15,27 @@
         "buckets": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "password": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "secretKey": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "type": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "uris": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "username": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "roleName": {
           "$ref": "../types.json#/definitions/string"
         }

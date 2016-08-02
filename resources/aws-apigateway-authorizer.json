@@ -15,21 +15,27 @@
         "AuthorizerResultTtlInSeconds": {
           "$ref": "../types.json#/definitions/integer"
         },
+
         "AuthorizerUri": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "IdentitySource": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "IdentityValidationExpression": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Name": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "RestApiId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Type": {
           "$ref": "../types.json#/definitions/string"
         }

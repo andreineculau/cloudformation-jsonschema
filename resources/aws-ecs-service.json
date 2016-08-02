@@ -15,15 +15,19 @@
         "DeploymentConfiguration": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-ecs-service-deploymentconfiguration"
         },
+
         "DesiredCount": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "LoadBalancers": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-ecs-service-loadbalancers"
         },
+
         "Role": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "TaskDefinition": {
           "$ref": "../types.json#/definitions/string"
         }

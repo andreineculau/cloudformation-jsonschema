@@ -15,9 +15,11 @@
         "HostedZoneId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "HostedZoneName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "RecordSets": {
           "items": {
             "$ref": "aws-route53-recordset.json#/properties/Properties"

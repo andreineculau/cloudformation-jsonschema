@@ -15,27 +15,35 @@
         "BucketName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "CorsConfiguration": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-s3-bucket-cors"
         },
+
         "LifecycleConfiguration": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-s3-bucket-lifecycleconfig"
         },
+
         "LoggingConfiguration": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-s3-bucket-loggingconfig"
         },
+
         "NotificationConfiguration": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-s3-bucket-notificationconfig"
         },
+
         "ReplicationConfiguration": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-s3-bucket-replicationconfiguration"
         },
+
         "Tags": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-resource-tags"
         },
+
         "VersioningConfiguration": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-s3-bucket-versioningconfig"
         },
+
         "WebsiteConfiguration": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-s3-websiteconfiguration"
         }

@@ -15,6 +15,7 @@
         "VpcId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "VpnGatewayId": {
           "$ref": "../types.json#/definitions/string"
         }

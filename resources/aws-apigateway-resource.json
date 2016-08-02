@@ -15,6 +15,7 @@
         "PathPart": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "RestApiId": {
           "$ref": "../types.json#/definitions/string"
         }

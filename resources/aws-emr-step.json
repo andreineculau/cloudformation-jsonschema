@@ -15,9 +15,11 @@
         "HadoopJarStep": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-emr-step-hadoopjarstepconfig"
         },
+
         "JobFlowId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Name": {
           "$ref": "../types.json#/definitions/string"
         }

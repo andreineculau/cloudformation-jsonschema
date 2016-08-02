@@ -15,9 +15,11 @@
         "DBSecurityGroupIngress": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-rds-security-group-rule"
         },
+
         "GroupDescription": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Tags": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-resource-tags"
         }

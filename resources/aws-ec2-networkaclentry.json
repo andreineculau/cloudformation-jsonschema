@@ -15,21 +15,27 @@
         "Egress": {
           "$ref": "../types.json#/definitions/boolean"
         },
+
         "Icmp": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-ec2-icmp"
         },
+
         "NetworkAclId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "PortRange": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-ec2-port-range"
         },
+
         "Protocol": {
           "$ref": "../types.json#/definitions/integer"
         },
+
         "RuleAction": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "RuleNumber": {
           "$ref": "../types.json#/definitions/integer"
         }

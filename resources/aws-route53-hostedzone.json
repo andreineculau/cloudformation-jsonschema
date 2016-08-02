@@ -15,9 +15,11 @@
         "HostedZoneTags": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-route53-hostedzone-hostedzonetags"
         },
+
         "Name": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "VPCs": {
           "$ref": "../resource-property-types.json#/definitions/aws-resource-route53-hostedzone-hostedzonevpcs"
         }

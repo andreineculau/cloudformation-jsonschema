@@ -15,9 +15,11 @@
         "Family": {
           "description": "<p>The database family of this DB cluster parameter group, such as\n                     <code class=\"code\">aurora5.6</code>.</p><p><span class=\"emphasis\"><em>Required</em></span>: Yes</p><p><span class=\"emphasis\"><em>Type:</em></span> String</p><p><span class=\"emphasis\"><em>Update requires</em></span>: <a class=\"link\" href=\"http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement\">Replacement</a></p>"
         },
+
         "Parameters": {
           "$ref": "../types.json#/definitions/key-value-pairs"
         },
+
         "Tags": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-resource-tags"
         }

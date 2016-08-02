@@ -15,6 +15,7 @@
         "InstanceId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "VolumeId": {
           "$ref": "../types.json#/definitions/string"
         }

@@ -15,6 +15,7 @@
         "SubnetIds": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "Tags": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-resource-tags"
         }

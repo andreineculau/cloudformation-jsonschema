@@ -15,6 +15,7 @@
         "Path": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Policies": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-iam-policy"
         }

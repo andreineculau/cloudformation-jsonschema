@@ -15,6 +15,7 @@
         "Name": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Predicates": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-waf-rule-predicates"
         }

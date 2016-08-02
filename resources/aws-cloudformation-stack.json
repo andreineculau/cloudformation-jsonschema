@@ -15,12 +15,15 @@
         "Parameters": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-stack-parameters"
         },
+
         "Tags": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-resource-tags"
         },
+
         "TemplateURL": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "TimeoutInMinutes": {
           "$ref": "../types.json#/definitions/string"
         }

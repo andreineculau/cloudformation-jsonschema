@@ -15,9 +15,11 @@
         "c-ip": {
           "description": "<p>If the viewer did not use an HTTP proxy or a load balancer to send the\n                    request</p>"
         },
+
         "x-forwarded-for": {
           "description": "<p>If the viewer did use an HTTP proxy or a load balancer to send the\n                    request</p>"
         },
+
         "Name": {
           "$ref": "../types.json#/definitions/string"
         }

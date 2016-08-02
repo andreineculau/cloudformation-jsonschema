@@ -15,51 +15,67 @@
         "AutoMinorVersionUpgrade": {
           "$ref": "../types.json#/definitions/boolean"
         },
+
         "CacheNodeType": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "CacheParameterGroupName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "CacheSecurityGroupNames": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "CacheSubnetGroupName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Engine": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "EngineVersion": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "NotificationTopicArn": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "NumCacheClusters": {
           "$ref": "../types.json#/definitions/integer"
         },
+
         "Port": {
           "$ref": "../types.json#/definitions/integer"
         },
+
         "PreferredCacheClusterAZs": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "PreferredMaintenanceWindow": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "ReplicationGroupDescription": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "SecurityGroupIds": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "SnapshotArns": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "SnapshotRetentionLimit": {
           "$ref": "../types.json#/definitions/integer"
         },
+
         "SnapshotWindow": {
           "$ref": "../types.json#/definitions/string"
         }

@@ -15,6 +15,7 @@
         "LogGroupName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "MetricTransformations": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-logs-metricfilter-metrictransformation"
         }

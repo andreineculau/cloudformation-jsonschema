@@ -15,6 +15,7 @@
         "Subscription": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-sns-subscription"
         },
+
         "TopicName": {
           "$ref": "../types.json#/definitions/string"
         }

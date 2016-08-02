@@ -15,12 +15,15 @@
         "EnableDnsSupport": {
           "$ref": "../types.json#/definitions/boolean"
         },
+
         "EnableDnsHostnames": {
           "$ref": "../types.json#/definitions/boolean"
         },
+
         "InstanceTenancy": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Tags": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-resource-tags"
         }

@@ -15,18 +15,23 @@
         "BodyS3Location": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-apitgateway-restapi-bodys3location"
         },
+
         "CloneFrom": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Description": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "FailOnWarnings": {
           "$ref": "../types.json#/definitions/boolean"
         },
+
         "Name": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Parameters": {
           "$ref": "../types.json#/definitions/list<string>"
         }

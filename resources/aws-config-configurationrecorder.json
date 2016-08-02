@@ -15,6 +15,7 @@
         "RecordingGroup": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-config-configurationrecorder-recordinggroup"
         },
+
         "RoleARN": {
           "$ref": "../types.json#/definitions/string"
         }

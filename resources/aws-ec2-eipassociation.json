@@ -15,12 +15,15 @@
         "EIP": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "InstanceId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "NetworkInterfaceId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "PrivateIpAddress": {
           "$ref": "../types.json#/definitions/string"
         }

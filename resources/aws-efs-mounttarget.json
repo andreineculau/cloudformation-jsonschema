@@ -15,9 +15,11 @@
         "IpAddress": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "SecurityGroups": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "SubnetId": {
           "$ref": "../types.json#/definitions/string"
         }

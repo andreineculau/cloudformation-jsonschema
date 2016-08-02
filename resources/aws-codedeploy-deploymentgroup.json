@@ -15,21 +15,27 @@
         "AutoScalingGroups": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "Deployment": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-codedeploy-deploymentgroup-deployment"
         },
+
         "DeploymentConfigName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "DeploymentGroupName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Ec2TagFilters": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-codedeploy-deploymentgroup-ec2tagfilters"
         },
+
         "OnPremisesInstanceTagFilters": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-codedeploy-deploymentgroup-onpremisesinstancetagfilters"
         },
+
         "ServiceRoleArn": {
           "$ref": "../types.json#/definitions/string"
         }

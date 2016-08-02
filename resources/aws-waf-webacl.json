@@ -15,9 +15,11 @@
         "MetricName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Name": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Rules": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-waf-webacl-rules"
         }

@@ -15,9 +15,11 @@
         "DeviceIndex": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "InstanceId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "NetworkInterfaceId": {
           "$ref": "../types.json#/definitions/string"
         }

@@ -15,24 +15,31 @@
         "CacheClusterSize": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "ClientCertificateId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "DeploymentId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Description": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "MethodSettings": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-apitgateway-stage-methodsetting"
         },
+
         "RestApiId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "StageName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Variables": {
           "$ref": "../types.json#/definitions/key-value-pairs"
         }

@@ -15,21 +15,27 @@
         "GroupSet": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "PrivateIpAddress": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "PrivateIpAddresses": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-ec2-network-interface-privateipspec"
         },
+
         "SecondaryPrivateIpAddressCount": {
           "$ref": "../types.json#/definitions/integer"
         },
+
         "SourceDestCheck": {
           "$ref": "../types.json#/definitions/boolean"
         },
+
         "SubnetId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Tags": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-resource-tags"
         }

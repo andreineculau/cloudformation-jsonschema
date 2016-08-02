@@ -15,6 +15,7 @@
         "Status": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "UserName": {
           "$ref": "../types.json#/definitions/string"
         }

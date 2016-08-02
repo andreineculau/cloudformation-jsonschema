@@ -15,24 +15,31 @@
         "AvailabilityZone": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Encrypted": {
           "$ref": "../types.json#/definitions/boolean"
         },
+
         "Iops": {
           "$ref": "../types.json#/definitions/integer"
         },
+
         "KmsKeyId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Size": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "SnapshotId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Tags": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-resource-tags"
         },
+
         "VolumeType": {
           "$ref": "../types.json#/definitions/string"
         }

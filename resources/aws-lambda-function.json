@@ -15,24 +15,31 @@
         "Description": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "FunctionName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Handler": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "MemorySize": {
           "$ref": "../types.json#/definitions/integer"
         },
+
         "Role": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Runtime": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Timeout": {
           "$ref": "../types.json#/definitions/integer"
         },
+
         "VpcConfig": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-lambda-function-vpcconfig"
         }

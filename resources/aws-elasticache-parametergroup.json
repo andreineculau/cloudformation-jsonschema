@@ -15,6 +15,7 @@
         "Description": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Properties": {
           "type": "object"
         }

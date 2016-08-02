@@ -15,27 +15,35 @@
         "AuthorizationType": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "AuthorizerId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "HttpMethod": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Integration": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-apitgateway-method-integration"
         },
+
         "MethodResponses": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-apitgateway-method-methodresponse"
         },
+
         "RequestModels": {
           "$ref": "../types.json#/definitions/key-value-pairs"
         },
+
         "RequestParameters": {
           "$ref": "../types.json#/definitions/key-value-pairs"
         },
+
         "ResourceId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "RestApiId": {
           "$ref": "../types.json#/definitions/string"
         }

@@ -15,24 +15,31 @@
         "Configurations": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-emr-cluster-configuration"
         },
+
         "EbsConfiguration": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-emr-ebsconfiguration"
         },
+
         "InstanceCount": {
           "$ref": "../types.json#/definitions/integer"
         },
+
         "InstanceRole": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "InstanceType": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "JobFlowId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Market": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Name": {
           "$ref": "../types.json#/definitions/string"
         }

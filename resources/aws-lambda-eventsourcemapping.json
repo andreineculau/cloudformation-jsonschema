@@ -15,12 +15,15 @@
         "Enabled": {
           "$ref": "../types.json#/definitions/boolean"
         },
+
         "EventSourceArn": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "FunctionName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "StartingPosition": {
           "$ref": "../types.json#/definitions/string"
         }

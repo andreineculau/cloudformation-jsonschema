@@ -15,12 +15,15 @@
         "Description": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Name": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "RestApiId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Schema": {
           "$ref": "../types.json#/definitions/string"
         }

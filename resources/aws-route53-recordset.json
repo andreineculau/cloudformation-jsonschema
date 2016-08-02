@@ -15,39 +15,51 @@
         "Comment": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Failover": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "GeoLocation": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-route53-recordset-geolocation"
         },
+
         "HealthCheckId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "HostedZoneId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "HostedZoneName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Name": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Region": {
           "description": "<p>Latency resource record sets only: The Amazon EC2 region where the resource that is\n                  specified in this resource record set resides. The resource typically is an AWS\n                  resource, for example, Amazon EC2 instance or an Elastic Load Balancing load balancer, and is referred\n                  to by an IP address or a DNS domain name, depending on the record type.</p><p>When Amazon Route 53 receives a DNS query for a domain name and type for which you have\n                  created latency resource record sets, Amazon Route 53 selects the latency resource record\n                  set that has the lowest latency between the end user and the associated Amazon EC2\n                  region. Amazon Route 53 then returns the value that is associated with the selected resource\n                  record set.</p><p>The following restrictions must be followed:</p><div class=\"itemizedlist\"><ul class=\"itemizedlist\" type=\"disc\"><li class=\"listitem\"><p>You can only specify one resource record per latency resource record\n                        set.</p></li><li class=\"listitem\"><p>You can only create one latency resource record set for each Amazon EC2\n                        region.</p></li><li class=\"listitem\"><p>You are not required to create latency resource record sets for all Amazon EC2\n                        regions. Amazon Route 53 will choose the region with the best latency from among the\n                        regions for which you create latency resource record sets.</p></li><li class=\"listitem\"><p>You cannot create both weighted and latency resource record sets that\n                        have the same values for the Name and Type elements.</p></li></ul></div><p>To see a list of regions by service, see <a class=\"ulink\" href=\"http://docs.aws.amazon.com/general/latest/gr/rande.html\" target=\"_blank\">Regions and Endpoints</a> in the\n                  <em class=\"citetitle\">AWS General Reference</em>.</p>"
         },
+
         "ResourceRecords": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "SetIdentifier": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "TTL": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Type": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Weight": {
           "$ref": "../types.json#/definitions/integer"
         }

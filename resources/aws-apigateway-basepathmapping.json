@@ -15,9 +15,11 @@
         "DomainName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "RestApiId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Stage": {
           "$ref": "../types.json#/definitions/string"
         }

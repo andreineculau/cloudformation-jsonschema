@@ -15,18 +15,23 @@
         "ConfigurationProperties": {
           "$ref": "../resource-property-types.json#/definitions/aws-resource-codepipeline-customactiontype-configurationproperties"
         },
+
         "InputArtifactDetails": {
           "$ref": "../resource-property-types.json#/definitions/aws-resource-codepipeline-customactiontype-artifactdetails"
         },
+
         "OutputArtifactDetails": {
           "$ref": "../resource-property-types.json#/definitions/aws-resource-codepipeline-customactiontype-artifactdetails"
         },
+
         "Provider": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Settings": {
           "$ref": "../resource-property-types.json#/definitions/aws-resource-codepipeline-customactiontype-settings"
         },
+
         "Version": {
           "$ref": "../types.json#/definitions/string"
         }

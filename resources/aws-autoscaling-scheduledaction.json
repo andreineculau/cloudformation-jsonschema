@@ -15,18 +15,23 @@
         "DesiredCapacity": {
           "$ref": "../types.json#/definitions/integer"
         },
+
         "EndTime": {
           "description": "<p>The time in UTC for this schedule to end. For example,\n                     <code class=\"code\">2010-06-01T00:00:00Z</code>.</p><p><span class=\"emphasis\"><em>Required</em></span>: No</p><p><span class=\"emphasis\"><em>Type</em></span>: Time stamp</p><p><span class=\"emphasis\"><em>Update requires</em></span>: <a class=\"link\" href=\"http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt\">No interruption</a></p>"
         },
+
         "MaxSize": {
           "$ref": "../types.json#/definitions/integer"
         },
+
         "MinSize": {
           "$ref": "../types.json#/definitions/integer"
         },
+
         "Recurrence": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "StartTime": {
           "description": "<p>The time in UTC for this schedule to start. For example,\n                     <code class=\"code\">2010-06-01T00:00:00Z</code>.</p><p><span class=\"emphasis\"><em>Required</em></span>: No</p><p><span class=\"emphasis\"><em>Type</em></span>: Time stamp</p><p><span class=\"emphasis\"><em>Update requires</em></span>: <a class=\"link\" href=\"http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt\">No interruption</a></p>"
         }

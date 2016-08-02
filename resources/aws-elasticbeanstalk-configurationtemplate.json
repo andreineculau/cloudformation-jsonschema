@@ -15,15 +15,19 @@
         "Description": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "EnvironmentId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "OptionSettings": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-beanstalk-option-settings"
         },
+
         "SolutionStackName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "SourceConfiguration": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-beanstalk-configurationtemplate-sourceconfiguration"
         }

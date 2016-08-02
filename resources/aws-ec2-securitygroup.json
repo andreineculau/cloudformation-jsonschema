@@ -15,12 +15,15 @@
         "SecurityGroupEgress": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-ec2-security-group-rule"
         },
+
         "SecurityGroupIngress": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-ec2-security-group-rule"
         },
+
         "Tags": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-resource-tags"
         },
+
         "VpcId": {
           "$ref": "../types.json#/definitions/string"
         }

@@ -15,45 +15,59 @@
         "AutoAssignElasticIps": {
           "$ref": "../types.json#/definitions/boolean"
         },
+
         "AutoAssignPublicIps": {
           "$ref": "../types.json#/definitions/boolean"
         },
+
         "CustomInstanceProfileArn": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "CustomRecipes": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-opsworks-layer-recipes"
         },
+
         "CustomSecurityGroupIds": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "EnableAutoHealing": {
           "$ref": "../types.json#/definitions/boolean"
         },
+
         "InstallUpdatesOnBoot": {
           "$ref": "../types.json#/definitions/boolean"
         },
+
         "LifecycleEventConfiguration": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-opsworks-layer-lifecycleeventconfiguration"
         },
+
         "LoadBasedAutoScaling": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-opsworks-layer-loadbasedautoscaling"
         },
+
         "Name": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Packages": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "Shortname": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "StackId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Type": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "VolumeConfigurations": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-opsworks-layer-volumeconfig"
         }

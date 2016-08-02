@@ -15,12 +15,15 @@
         "Name": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "S3BucketName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "S3KeyPrefix": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "SnsTopicARN": {
           "$ref": "../types.json#/definitions/string"
         }

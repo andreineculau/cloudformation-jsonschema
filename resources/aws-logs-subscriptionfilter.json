@@ -15,9 +15,11 @@
         "FilterPattern": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "LogGroupName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "RoleArn": {
           "$ref": "../types.json#/definitions/string"
         }

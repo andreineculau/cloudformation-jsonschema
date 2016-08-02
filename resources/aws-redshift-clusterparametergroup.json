@@ -15,6 +15,7 @@
         "ParameterGroupFamily": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Parameters": {
           "$ref": "../resource-property-types.json#/definitions/aws-property-redshift-clusterparametergroup-parameter"
         }

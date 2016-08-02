@@ -15,24 +15,31 @@
         "AutoScalingGroupName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Cooldown": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "EstimatedInstanceWarmup": {
           "$ref": "../types.json#/definitions/integer"
         },
+
         "MetricAggregationType": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "MinAdjustmentMagnitude": {
           "$ref": "../types.json#/definitions/integer"
         },
+
         "PolicyType": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "ScalingAdjustment": {
           "$ref": "../types.json#/definitions/integer"
         },
+
         "StepAdjustments": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-autoscaling-scalingpolicy-stepadjustments"
         }

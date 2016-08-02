@@ -15,9 +15,11 @@
         "RouteTableIds": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "ServiceName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "VpcId": {
           "$ref": "../types.json#/definitions/string"
         }

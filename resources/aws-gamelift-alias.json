@@ -15,6 +15,7 @@
         "Name": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "RoutingStrategy": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-gamelift-alias-routingstrategy"
         }

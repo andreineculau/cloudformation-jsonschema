@@ -15,48 +15,63 @@
         "BlockDeviceMappings": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-as-launchconfig-blockdev-mapping"
         },
+
         "ClassicLinkVPCId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "ClassicLinkVPCSecurityGroups": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "EbsOptimized": {
           "$ref": "../types.json#/definitions/boolean"
         },
+
         "IamInstanceProfile": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "ImageId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "InstanceId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "InstanceMonitoring": {
           "$ref": "../types.json#/definitions/boolean"
         },
+
         "InstanceType": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "KernelId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "KeyName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "PlacementTenancy": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "RamDiskId": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "SecurityGroups": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "SpotPrice": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "UserData": {
           "$ref": "../types.json#/definitions/string"
         }

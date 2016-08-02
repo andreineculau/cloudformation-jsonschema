@@ -15,42 +15,55 @@
         "AlarmActions": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "AlarmDescription": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "AlarmName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "ComparisonOperator": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Dimensions": {
           "$ref": "../resource-property-types.json#/definitions/aws-properties-cw-dimension"
         },
+
         "EvaluationPeriods": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "InsufficientDataActions": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "MetricName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Namespace": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "OKActions": {
           "$ref": "../types.json#/definitions/list<string>"
         },
+
         "Period": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Statistic": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Threshold": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Unit": {
           "$ref": "../types.json#/definitions/string"
         }

@@ -15,12 +15,15 @@
         "FunctionName": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "Principal": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "SourceAccount": {
           "$ref": "../types.json#/definitions/string"
         },
+
         "SourceArn": {
           "$ref": "../types.json#/definitions/string"
         }
