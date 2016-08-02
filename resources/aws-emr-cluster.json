@@ -56,7 +56,7 @@
       ]
     },
 
-    "DepdensOn": {
+    "DepensOn": {
       "$ref": "../resource-common.json#/definitions/DependsOn"
     },
 
